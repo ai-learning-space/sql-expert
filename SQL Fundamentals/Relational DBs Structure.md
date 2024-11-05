@@ -18,7 +18,7 @@ In relational databases, information is stored in related tables. Each table con
 - **Rows →**  called "records"
 - **Columns →** called "fields" or "attributes"
 
-![table-structure](img/table-structure.png)
+![table-structure](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/table-structure.png)
 
 Each column in a table must have predefined data type. The main reason → *Data Integrity and Consistency*. It ensures that only valid and consistent data is stored in that column. Below you can see what data types can be defined:
 
@@ -84,7 +84,7 @@ Including these additional points will provide a more comprehensive understandin
 
 The main purpose of a *foreign key* is to maintain *links* between tables, which avoids duplication of data and makes it easier to manage. For example, “*Ownership”* table might contain a f*oreign key* that references the *primary key of the “Cars”* table*,* making it easy to retrieve information about the customer who placed the order:
 
-![table-relations](img/table-relations.png)
+![table-relations](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/table-relations.png)
 
 <aside>
 💡

@@ -13,7 +13,7 @@ Type of *NoSQL* database that stores data as documents, typically in *JSON*, *BS
 
 # Document-Oriented Database Example 🧪
 
-![collection-example](img/collection-example.png)
+![collection-example](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/collection-example.png)
 
 In the example above we have *“Car Collection”* that includes several document. Each document describes an observation → similar to a row in *Relational Database*. You may notice that document don’t have fixed structure. For example, `Document 1` has 2 additional attributes in comparison to `Document 2` .
 

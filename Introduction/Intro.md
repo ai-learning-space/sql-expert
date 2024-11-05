@@ -12,7 +12,7 @@ The course contains a large number of practical tasks so that you can apply the 
 
 The course is split into chapters, each of which is a mini-course aimed at studying a specific knowledge in the field of SQL. It includes theoretical materials and practical tasks, which helps to consolidate the acquired knowledge and develop skills in working with SQL. 
 
-![sql-course-structure-cover](img/sql-course-structure-cover.png)
+![sql-course-structure-cover](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/Introduction/img/sql-course-structure-cover.png)
 
 Besides, the course contains 3 main blocks for mastering SQL:
 

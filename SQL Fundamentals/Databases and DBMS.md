@@ -17,7 +17,7 @@ We will discuss the different types of databases, their architecture, and the ma
 
 Each column represents a specific attribute/field, while each row corresponds to a unique record:
 
-![table-structure](img/table-structure.png)
+![table-structure](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/table-structure.png)
 
 Unfortunately, databases themselves are not useful without systems that allow you to manage them called *Database Management System*, shortly *DBMS.*
 
@@ -30,7 +30,7 @@ Unfortunately, databases themselves are not useful without systems that allow yo
 
 In other words, *DBMS* is a *platform* through which we can create databases and interact with data. For better understanding, let’s have a look at this picture:
 
-![dbms-and-db](img/dbms-and-db.png)
+![dbms-and-db](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/dbms-and-db.png)
 
 1. User writes SQL query to retrieve needed data 
 2. SQL query is processed by *DBMS* to extract relevant information from a database

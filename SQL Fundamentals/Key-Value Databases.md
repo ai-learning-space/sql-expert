@@ -17,11 +17,11 @@ The *key* is a *unique identifier* for each value in the database, which means y
 
 For example, the below picture demonstrates *“Car”* database in key-values format:
 
-![kvdb](img/kvdb.png)
+![kvdb](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/kvdb.png)
 
 We always have keys that may have flexible structure (e.g. *“name:id:attribute”) and values:*
 
-![user-vs-kvdb](img/user-vs-kvdb.png)
+![user-vs-kvdb](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/user-vs-kvdb.png)
 
 # Primary/Foreign Keys 🗝️
 

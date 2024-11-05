@@ -17,4 +17,4 @@ Besides, all types from above can be classified again into 2 main categories aga
 
 The picture below demonstrates the main database types:
 
-![sql-vs-nosql](img/sql-vs-nosql.png)
+![sql-vs-nosql](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/sql-vs-nosql.png)

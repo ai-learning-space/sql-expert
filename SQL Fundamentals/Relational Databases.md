@@ -33,7 +33,7 @@ Relationships between tables are created using *Foreign Keys*, which allow you t
 
 Let’s have a look at example of *“Car Data Base”* that describes relationship between cars and owners 🚗👨‍💼
 
-![relational-db](img/relational-db.png)
+![relational-db](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/relational-db.png)
 
 The database consist of 3 tables:
 
