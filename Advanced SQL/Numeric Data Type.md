@@ -1,11 +1,8 @@
-# Numeric Data Type
-
 # Numeric Data Type  🔢
 
 <aside>
-📖
 
-**Numeric Data Type** — numerical values (integers or decimals)
+📖**Numeric Data Type** — numerical values (integers or decimals)
 
 </aside>
 

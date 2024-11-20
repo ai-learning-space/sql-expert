@@ -1,19 +1,16 @@
 # IS NULL, BETWEEN, IN
 
-# IS NULL, BETWEEN, IN
-
 Effectively managing and querying data often involves the use of specific operators that help refine and filter results. Among these `IS NULL`, `BETWEEN` and `IN` operators play crucial roles in identifying missing values, specifying ranges and checking for multiple values within a dataset.
 
 Understanding how to utilize these operators can greatly enhance your ability to extract meaningful insights from databases, making your queries more efficient and precise. In this section, we will explore each operator in detail, providing examples and use cases to illustrate their importance in SQL queries.
 
-# IS NULL **🤷‍♂️**
+# IS NULL 🤷‍♂️
 
 The `IS NULL` operator is used to check for *missing or NULL values* in a column.
 
 <aside>
-💡
 
-`NULL` represents the absence of a value — it means that the field is empty or unknown.
+💡 `NULL` represents the absence of a value — it means that the field is empty or unknown.
 
 </aside>
 
@@ -35,13 +32,12 @@ WHERE name IS NOT NULL;
 Sometimes we need to select only those records where values are between specific range of values.
 
 <aside>
-💡
 
-`BETWEEN` is used to filter the result set within a specified range including start and end
+💡 `BETWEEN` is used to filter the result set within a specified range including start and end
 
 </aside>
 
-In *“Air BnB”* database let’s select only those bookings where price between 100 and 250dollars:
+In *“Air BnB”* database let’s select only those bookings where price between 100 and 250 dollars:
 
 ```sql
 SELECT *
@@ -57,9 +53,8 @@ WHERE price BETWEEN 100 AND 250;
 If we are interested in only specific values, we can specify them by using `IN` 
 
 <aside>
-💡
 
-`IN` is used to specify multiple possible values for a column
+💡 `IN` is used to specify multiple possible values for a column
 
 </aside>
 

@@ -1,11 +1,8 @@
 # Indexes
 
-# Indexes in SQL
-
 <aside>
-💡
 
-By default, DBMS doesn’t place the data in an optimal order
+💡 By default, DBMS doesn’t place the data in an optimal order
 
 </aside>
 
@@ -56,7 +53,6 @@ If you decide that an index is no longer needed after creating it, you can remov
 
 ```sql
 DROP INDEX idx_email ON Users;
-
 ```
 
 # Unique Indexes

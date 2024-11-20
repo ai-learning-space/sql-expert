@@ -1,5 +1,3 @@
-# Tables Creation/Deletion
-
 # Tables Creation/Deletion 🌱
 
 Tables are fundamental structures that store data in rows and columns. Below are the steps and commands for creating and deleting tables in PostgreSQL.
@@ -90,7 +88,6 @@ CREATE TABLE Users (
     company INT,
     PRIMARY KEY (id)
 );
-
 ```
 
 To ensure that the `company` column contains an identifier that exists in the `Companies` table when new records are added to the `Users` table, a foreign key is used. Its syntax is as follows:
@@ -113,7 +110,6 @@ CREATE TABLE Users (
     PRIMARY KEY (id),
     FOREIGN KEY (company) REFERENCES Companies (id)
 );
-
 ```
 
 With *foreign keys*, you can define the behavior of the current record when the referenced record is modified or deleted:
@@ -128,7 +124,6 @@ CREATE TABLE Users (
     FOREIGN KEY (company) REFERENCES Companies (id)
     ON DELETE RESTRICT ON UPDATE CASCADE
 );
-
 ```
 
 `ON DELETE RESTRICT` means that if you try to delete a company that has related data in the `Users` table, the database will not allow it:

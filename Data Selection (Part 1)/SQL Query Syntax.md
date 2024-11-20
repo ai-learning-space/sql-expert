@@ -1,5 +1,3 @@
-# SQL Query Syntax
-
 # SQL Query Syntax ⚙️
 
 At the very beginning we need to learn the fundamental principles and structures of SQL. We'll start by exploring the basic components of SQL queries including: `SELECT` , `FROM` , `WHERE` , `JOIN` to help you extract meaningful insights from your data.
@@ -16,10 +14,11 @@ FROM table_name;
 ```
 
 <aside>
-💡
 
-- `SELECT` ****— ****keyword is used to specify the columns you want to retrieve
+💡
+- `SELECT` ****—**** keyword is used to specify the columns you want to retrieve
 - `FROM` — keyword indicates the table from which to retrieve the data
+
 </aside>
 
 Let’s select several columns from *“Booking”* table:
@@ -51,9 +50,8 @@ SELECT "Hi, I’m learning SQL", 999;
 ```
 
 <aside>
-💡
 
-`SELECT` can retrieve not only data rom database tables but also to display arbitrary strings, numbers, dates, and more. 
+💡 `SELECT` can retrieve not only data rom database tables but also to display arbitrary strings, numbers, dates, and more. 
 
 </aside>
 
@@ -72,35 +70,35 @@ For example, in our *“Booking”* table let’s retrieve the information about
 
 ```sql
 SELECT
-		name AS client_name,
-		email AS client_email,
-		phone_number AS client_phone_number
+    name AS client_name,
+    email AS client_email,
+    phone_number AS client_phone_number
 FROM booking;
 ```
 
 Now the output will be more pretty and understandable.
 
 <aside>
-💡
 
-*Aliases* can be used not only for columns but for tables as well. Besides, `AS` is optional and can be omitted. However, it’s recommended to explicitly define it to keep the code understandable and consistent.
+💡 *Aliases* can be used not only for columns but for tables as well. Besides, `AS` is optional and can be omitted. However, it’s recommended to explicitly define it to keep the code understandable and consistent.
 
 </aside>
 
 ```sql
 -- not recommended 
 SELECT
-		name client_name,
-		email client_email,
-		phone_number client_phone_number
+    name client_name,
+    email client_email,
+    phone_number client_phone_number
 FROM booking;
 ```
 
 *Aliases* are a valuable feature that can significantly enhance the clarity and efficiency of your queries. By using aliases effectively, you can make your SQL code more readable and user-friendly, ensuring that your data analysis is both efficient and comprehensible. In practice, you’ll find that leveraging *aliases* can greatly improve your SQL querying experience!
 
 <aside>
-💡
 
-- *Aliases* don’t change the actual table or column names in the database
-- Always use *aliases* when your queries involve multiple tables or function calculations
+💡
+   - *Aliases* don’t change the actual table or column names in the database
+   - Always use *aliases* when your queries involve multiple tables or function calculations
+
 </aside>

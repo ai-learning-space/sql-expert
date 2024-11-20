@@ -1,13 +1,10 @@
-# Document-Oriented Databases
-
 # Document-Oriented Databases 📄
 
 Type of *NoSQL* database that stores data as documents, typically in *JSON*, *BSON*, or *XML* format. Unlike relational databases, where data is stored in tables, *document-oriented* databases offer flexibility in structure, allowing data to be stored with dynamic schemas, which is useful for applications that work with unstructured or semi-structured information.
 
 <aside>
-📖
 
-**Document-Oriented Databases** — storing and processing data in a document format similar to *JSON*
+📖 **Document-Oriented Databases** — storing and processing data in a document format similar to *JSON*
 
 </aside>
 
@@ -18,9 +15,8 @@ Type of *NoSQL* database that stores data as documents, typically in *JSON*, *BS
 In the example above we have *“Car Collection”* that includes several document. Each document describes an observation → similar to a row in *Relational Database*. You may notice that document don’t have fixed structure. For example, `Document 1` has 2 additional attributes in comparison to `Document 2` .
 
 <aside>
-💡
 
-Documents within a collection may have different attributes and structure
+💡 Documents within a collection may have different attributes and structure
 
 </aside>
 

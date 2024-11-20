@@ -1,13 +1,10 @@
-# Query Execution Order
-
 # Query Execution Order ➡️
 
 It turns out that when we write queries in SQL and execute them, something strange happens 🕵️‍♂️
 
 <aside>
-💡
 
-SQL queries aren’t executed in the order they are written!
+💡 SQL queries aren’t executed in the order they are written!
 
 </aside>
 

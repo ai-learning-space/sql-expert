@@ -1,13 +1,10 @@
-# Operator WHERE
-
 # Operator WHERE 🔍
 
 We often need not only to query data but also to filter it to retrieve only the relevant information. This is when `WHERE` operator shines and makes our life easier. The `WHERE` clause is one of the most commonly used parts of an SQL query. It allows you to filter records from a table, so you can retrieve only the rows that meet specific conditions. This is important when you want to narrow down your data to retrieve only relevant information.
 
 <aside>
-📖
 
-`WHERE` — is an operator in SQL used for data filtering
+📖 `WHERE` — is an operator in SQL used for data filtering
 
 </aside>
 
@@ -19,7 +16,7 @@ FROM table_name
 WHERE condition;
 ```
 
-For example, let’s find out flights from *Paris on Boeing 737 plane using “Air Travel"* database*:*
+For example, let’s find out flights from *Paris on Boeing 737 plane using “Air Travel"* database:
 
 ```sql
 SELECT * 
@@ -48,9 +45,8 @@ Comparison operators are used within the `WHERE` clause to compare values in col
 | *Greater or Equal* | `>=` | If one value is greater than or equal to another, the result will be 1; otherwise, it will be 0. |
 
 <aside>
-💡
 
-Comparison of any values with `NULL` returns `NULL` , except for equivalence operator
+💡 Comparison of any values with `NULL` returns `NULL` , except for equivalence operator
 
 </aside>
 
@@ -73,9 +69,8 @@ SELECT
 It’s nice if we could combine several conditions together and this is possible in SQL by using *logical operator*. *Logical operators* are used to combine multiple conditions in a `WHERE` clause, enabling more complex filtering of records based on specific criteria. These operators help refine queries by allowing you to specify relationships between different conditions.
 
 <aside>
-💡
 
-*Logical Operators* are essential for connecting comparison operators
+💡 *Logical Operators* are essential for connecting comparison operators
 
 </aside>
 

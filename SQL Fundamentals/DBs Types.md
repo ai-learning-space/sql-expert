@@ -1,5 +1,3 @@
-# DBs Types
-
 # Database Types 🗂️
 
 In this section of the course, we'll explore the different types of databases used to store, manage, and retrieve data. While relational databases are often the most commonly discussed, it’s important to understand that databases come in a variety of forms, each designed to handle different use cases with its own advantages and limitations. By knowing the different types, you can make more informed decisions when choosing a database solution for a specific problem.

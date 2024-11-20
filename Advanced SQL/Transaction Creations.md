@@ -1,5 +1,3 @@
-# Transaction Creations
-
 # Creating Transactions 💳
 
 If you attempt to transfer $1,000 from your savings account to your checking account and suddenly find that the money was deducted but not credited to your checking account, you would likely be upset.
@@ -9,10 +7,10 @@ To protect against such errors, the program processing your money transfer reque
 However, if any issues arise, the `ROLLBACK` command is executed, instructing the server to undo all actions taken since the start of the transaction.
 
 <aside>
-💡
 
-- `COMMIT` — is used to apply changes in a transaction
-- `ROLLBACK` — is used to undo changes in a transaction
+- **COMMIT** — is used to apply changes in a transaction
+- **ROLLBACK** — is used to undo changes in a transaction
+
 </aside>
 
 The process might look like this:

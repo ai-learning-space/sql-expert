@@ -1,31 +1,26 @@
-# Relational Databases
-
 # Relational Databases🔗
 
 Relational databases *(RDB)* are one of the most common ways of storing and organizing data. Their main advantage is that the data is organized into tables, where each row is a record, and the columns are the attributes of the data. This structure provides flexibility and the ability to easily search and manipulate data using the SQL language.
 
 <aside>
-📖
 
-**Relational Databases** — based on the relational model, where data is organized into tables containing rows and columns
+📖 **Relational Databases** — based on the relational model, where data is organized into tables containing rows and columns
 
 </aside>
 
 Each row in a table is always unique (i.e. there is no sense storing duplicate data). For this purpose, each table must always have a special column to identify each record called *Primary Key 🔑* 
 
 <aside>
-📖
 
-**Primary Key** — unique identifier for each record in a table
+📖 **Primary Key** — unique identifier for each record in a table
 
 </aside>
 
 Relationships between tables are created using *Foreign Keys*, which allow you to link data from different tables.
 
 <aside>
-📖
 
-**Foreign Key** — column or set of columns in one table that references the **Primary Key** in another table
+📖 **Foreign Key** — column or set of columns in one table that references the **Primary Key** in another table
 
 </aside>
 

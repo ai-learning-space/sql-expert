@@ -1,17 +1,16 @@
 # Data Type Change | CAST
 
-# Data Type Change | CAST
-
 <aside>
-📖
 
-`CAST` function is used to convert an expression from one data type to another.
+📖**CAST** function is used to convert an expression from one data type to another.
 
 </aside>
 
+<br>
+
 This is particularly useful when you need to ensure that data types match in operations, such as when performing calculations, comparisons or when inserting data into a table.
 
-# CAST Syntax **⚙️**
+# CAST Syntax ⚙️
 
 Operator `CAST` has the following syntax:
 

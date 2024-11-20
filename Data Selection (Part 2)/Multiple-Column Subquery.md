@@ -1,19 +1,16 @@
-# Multiple-Column Subquery
-
-# **Multiple-Column Subquery 2️⃣📄**
+# Multiple-Column Subquery 2️⃣📄
 
 Unlike single-column subqueries, which return a single column, multiple-column subqueries can return two or more columns, each of which can be matched with columns in the main query.
 
 <aside>
-📖
 
-**Multiple-Column Subquery —** subquery that returns more than one column of results.
+📖 **Multiple-Column Subquery** — subquery that returns more than one column of results.
 
 </aside>
 
 This is useful when you need to compare a combination of columns from one table against a combination of columns from another.
 
-# **Multiple-Column Subquery Logic** 🧩
+# Multiple-Column Subquery Logic 🧩
 
 - A multiple-column subquery returns more than one column.
 - In the main query, the combination of values from these columns can be compared to columns in the main query using operators like `IN` or specific comparisons between pairs of columns.
@@ -38,7 +35,7 @@ WHERE (id, price) IN (SELECT id, price FROM apartment);
 - *Enhanced Query Power:*
     - They expand the querying capability beyond what *single-column subqueries* offer, making it possible to handle more intricate data relationships.
 
-# **Important Notes ⚠️**
+# Important Notes ⚠️
 
 - *Performance Overheads:*
     - As with any complex subquery, *multiple-column subqueries* may impact performance, especially when used with large data sets.

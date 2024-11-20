@@ -1,5 +1,3 @@
-# String Data Types
-
 # String Data Type 🆎
 
 The *string* data type is the most commonly used data type in SQL. It allows for the storage of both *textual* and various *binary data* (such as images) within a database.

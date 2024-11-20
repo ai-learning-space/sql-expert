@@ -1,5 +1,3 @@
-# Data Types of Table Columns
-
 # Data Types for Table Columns
 
 Each column in a table must have a specific *data type* that indicates what kind of information can be stored in that column. The *data type* of a column determines the operations that can be performed on the data, the amount of storage space required and how the data is stored internally.

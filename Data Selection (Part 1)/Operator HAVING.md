@@ -1,13 +1,10 @@
-# Operator HAVING
-
 # Operator HAVING 🛒
 
 After using `GROUP BY` clause to aggregate data, there are often scenarios where you want to further filter the resulting groups based on specific conditions. The `HAVING` clause is specifically designed for this purpose, allowing you to impose restrictions on the results of aggregate functions.
 
 <aside>
-📖
 
-`HAVING` is used to filter the grouped data used in `GROUP BY`
+📖 `HAVING` is used to filter the grouped data used in `GROUP BY`
 
 </aside>
 
@@ -27,9 +24,8 @@ HAVING agg_function(column2) condition;
 In *“Air BnB”* database let’s select only those that have on average price more than 100. In practice, it’s tempting to select the data using `WHERE` operator. However, this is incorrect. Again, we want to apply our conditions on groups and not columns!
 
 <aside>
-💡
 
-`HAVING` filters groups, `WHERE` filters rows!
+💡 `HAVING` filters groups, `WHERE` filters rows!
 
 </aside>
 
@@ -37,8 +33,8 @@ So our final and correct query will look like this:
 
 ```sql
 SELECT
-		type AS apartment_type,
-		AVG(price) AS avg_price
+   type AS apartment_type,
+   AVG(price) AS avg_price
 FROM apartment
 GROUP BY type
 HAVING AVG(price) > 100;
@@ -60,8 +56,8 @@ The final query will look like this:
 
 ```sql
 SELECT
-		type AS apartment_type,
-		MIN(price) as min_price
+    type AS apartment_type,
+    MIN(price) as min_price
 FROM apartment
 WHERE has_internet = True
 GROUP BY type

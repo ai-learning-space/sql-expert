@@ -1,5 +1,3 @@
-# Databases and DBMS
-
 # Databases and DBMS 📚
 
 At the beginning of the course we will cover the basics of databases and database management systems → *DBMS*. Understanding these concepts is key to working with SQL, as they determine how data is stored, organized, and processed. 
@@ -7,9 +5,8 @@ At the beginning of the course we will cover the basics of databases and databas
 We will discuss the different types of databases, their architecture, and the main functions of a *DBMS*, which will help you better navigate the data environment.
 
 <aside>
-📖
 
-**Database** — organized collection of data stored in a structured manner
+📖 **Database** — organized collection of data stored in a structured manner
 
 </aside>
 
@@ -22,9 +19,8 @@ Each column represents a specific attribute/field, while each row corresponds to
 Unfortunately, databases themselves are not useful without systems that allow you to manage them called *Database Management System*, shortly *DBMS.*
 
 <aside>
-📖
 
-**DBMS** — ****set of tools and languages that allow access, create, modify and delete data, as well as ensure the security and integrity of the information
+📖 **DBMS** — set of tools and languages that allow access, create, modify and delete data, as well as ensure the security and integrity of the information
 
 </aside>
 
