@@ -1,17 +1,14 @@
-# Correlated subqueries
-
-# **Correlated Subqueries 🔗**
+# Correlated Subqueries 🔗
 
 Unlike *regular subqueries*, which execute independently, a correlated subquery runs once for each row processed by the outer query. This relationship allows correlated subqueries to evaluate data on a row-by-row basis, making them useful for complex filtering and calculations.
 
 <aside>
-📖
 
-**Correlated Subquery —** subquery that refers to columns from the outer query.
+📖 **Correlated Subquery —** subquery that refers to columns from the outer query.
 
 </aside>
 
-# **Correlated Subquery Logic** 🧩
+# Correlated Subquery Logic 🧩
 
 - A correlated subquery is evaluated row by row for the outer query, using values from the current row in the outer query.
 - It typically appears in the `WHERE` clause but can also be used in `SELECT` or `HAVING` clauses.
@@ -23,12 +20,12 @@ let’s find out who spent how much:
 
 ```sql
 SELECT
-		familymember.name,
-		(
-				SELECT SUM(payment.unit_price * payment.amount)
-			  FROM payment
-			  WHERE payment.family_member_id = familymember.id
-	  ) AS total_spent
+    familymember.name,
+    (
+        SELECT SUM(payment.unit_price * payment.amount)
+        FROM payment
+        WHERE payment.family_member_id = familymember.id
+    ) AS total_spent
 FROM familymember;
 ```
 
@@ -43,7 +40,7 @@ In this case, the correlated subquery references the `member_id` column from the
 - *Effective for Dependent Data:*
     - *Correlated subqueries* are well-suited for cases where rows in one table depend on specific conditions in another table.
 
-# **Important Notes ⚠️**
+# Important Notes ⚠️
 
 - *Performance Impact:*
     - Since correlated subqueries run for each row in the outer query, they can be slower, especially with large data sets. Consider indexing columns used in the subquery to improve performance.

@@ -1,5 +1,3 @@
-# Data Grouping, GROUP BY
-
 # Data Grouping | GROUP BY 👨‍👩‍👧‍👦
 
 In the world of databases, analyzing large datasets often requires more than just retrieving raw data, it demands a method to organize and summarize that information effectively. This is where the `GROUP BY` clause in SQL comes into play.
@@ -7,9 +5,8 @@ In the world of databases, analyzing large datasets often requires more than jus
 By allowing users to group rows sharing common values in specified columns, `GROUP BY` makes it possible to perform aggregate functions like `SUM`, `COUNT` and `AVG` on these groups. This powerful feature not only simplifies complex queries but also enhances data analysis, enabling better insights and decision-making. 
 
 <aside>
-📖
 
-`GROUP BY` is used to group rows that have the same values in specified columns and then perform aggregate functions like `COUNT`, `SUM`, `AVG`, `MAX`, `MIN` on those groups.
+📖 `GROUP BY` is used to group rows that have the same values in specified columns and then perform aggregate functions like `COUNT`, `SUM`, `AVG`, `MAX`, `MIN` on those groups.
 
 </aside>
 
@@ -64,9 +61,8 @@ Above query can be visualized in the picture below:
 - Aggregation function is applied to the groups → `COUNT(DISTINCT plane)`
 
 <aside>
-💡
 
-`GROUP BY` treats `NULL` values equal. If filed contains `NULL` , all rows will be placed in the same group.
+💡 `GROUP BY` treats `NULL` values equal. If filed contains `NULL` , all rows will be placed in the same group.
 
 </aside>
 
@@ -78,7 +74,7 @@ FROM flight
 GROUP BY plane_name;
 ```
 
-# **Grouping by Two or More Fields ➕**
+# Grouping by Two or More Fields ➕
 
 When grouping by two or more fields, the principle remains the same. However, the resulting groups are further divided into smaller groups based on the second grouping field.
 
@@ -88,7 +84,7 @@ FROM flight
 GROUP BY plane_name, departure_city;
 ```
 
-# Why Using GROUP BY? **🤔**
+# Why Using GROUP BY? 🤔
 
 - **Data Summarization:**
     - Easily summarize and aggregate large datasets to gain insights.

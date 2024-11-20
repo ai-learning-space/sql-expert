@@ -1,13 +1,10 @@
-# Key-Value Databases
-
 # Key-Value Databases 🔑
 
 Key-value databases are one of the simplest and most efficient types of *NoSQL* storage. These databases organize data into *key-value* pairs, where each unique key corresponds to a specific value. This approach allows for fast access and manipulation of data, making *key-value* databases ideal for high-performance applications and scenarios that require scalability.
 
 <aside>
-📖
 
-**Key-Value Database** — ****data storage where each record is represented as a key-value pair
+📖 **Key-Value Database** — data storage where each record is represented as a key-value pair
 
 </aside>
 
@@ -28,9 +25,8 @@ We always have keys that may have flexible structure (e.g. *“name:id:attribute
 *Key-value* databases don’t support the direct concept of *primary/foreign keys*, as there are no strict relationships between tables as in relational systems. However, it is possible to create references to other values using the key structure.
 
 <aside>
-📖
 
-**Key-Value Database** no longer have strict format. Each entity may have its own structure
+📖 **Key-Value Database** no longer have strict format. Each entity may have its own structure
 
 </aside>
 
@@ -49,9 +45,8 @@ Value: {"name": "George Orwell", "birth_year": 1903}
 In this example, the book’s value includes a reference to the *author’s ID →* `author_id` , allowing you to link the book to its author, even without strict *foreign key* relationships.
 
 <aside>
-💡
 
-You can retrieve the author’s details using the key `author:1` 
+💡 You can retrieve the author’s details using the key `author:1` 
 
 </aside>
 

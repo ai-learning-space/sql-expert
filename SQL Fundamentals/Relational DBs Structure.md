@@ -1,22 +1,19 @@
-# Relational DBs Structure
-
 # Relational DBs Structure 🏛️
 
 *Relational databases (RDBMS)* are based on tables, where data is organized into rows and columns. Each table represents a set of data related to a specific entity, such as customers, orders, or products. Relationships between these tables are established using *keys* - *primary* and *foreign*.
 
 <aside>
-💡
 
-**Primary** and **Foreign Keys** allow data to be easily combined and manipulated
+💡 **Primary** and **Foreign Keys** allow data to be easily combined and manipulated
 
 </aside>
 
-# **Table Structure 📝**
+# Table Structure 📝
 
 In relational databases, information is stored in related tables. Each table consists of:
 
-- **Rows →**  called "records"
-- **Columns →** called "fields" or "attributes"
+- **Rows** → called "records"
+- **Columns** → called "fields" or "attributes"
 
 ![table-structure](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/table-structure.png)
 
@@ -29,18 +26,16 @@ Each column in a table must have predefined data type. The main reason → *Data
 A column defined as `INTEGER` will only accept numeric values, preventing errors like inserting text into a numeric field.
 
 <aside>
-💡
 
-Each **Column** must have fixed data type (e.g. *integer*, *varchar*, …)
+💡 Each **Column** must have fixed data type (e.g. *integer*, *varchar*, …)
 
 </aside>
 
-# **Primary Key** 🔑
+# Primary Key 🔑
 
 <aside>
-📖
 
-**Primary Key** — **unique** identifier for each record in a table. It ensures data integrity by ensuring that each row can be uniquely identified, preventing duplication and confusion
+📖 **Primary Key** — **unique** identifier for each record in a table. It ensures data integrity by ensuring that each row can be uniquely identified, preventing duplication and confusion
 
 </aside>
 
@@ -76,9 +71,8 @@ Including these additional points will provide a more comprehensive understandin
 # Foreign Key 🗝️
 
 <aside>
-📖
 
-**Foreign Key** — reference to the *primary key* of another table, ensuring data integrity and establishing logical relationships between different entities
+📖 **Foreign Key** — reference to the *primary key* of another table, ensuring data integrity and establishing logical relationships between different entities
 
 </aside>
 
@@ -91,6 +85,7 @@ The main purpose of a *foreign key* is to maintain *links* between tables, which
 
 - **Child Table** — table that contains a *foreign key*
 - **Parent Table** — table with a *primary key* referencing another table
+
 </aside>
 
 Thus, when records are created in the *child table*, the *foreign key* value must exist in the *parent table*

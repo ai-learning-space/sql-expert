@@ -1,5 +1,3 @@
-# Locks in DBMS
-
 # Locking in DBMS 🔒
 
 Database management systems allow a single user to retrieve and modify data. However, in today's world, thousands of people can make changes to a database simultaneously. If users primarily perform read operations, this load poses little challenge to the database server. But if some users are adding or modifying data concurrently, the server faces much more complex tasks.
@@ -10,16 +8,13 @@ Imagine you are preparing a financial report that summarizes daily store sales o
 - Another customer returns a defective item and receives a refund.
 - The store receives a new shipment of products.
 
-During the time your report is being generated, multiple users are altering information in the database. So, what numbers should appear in the report?
-
-The answer depends on how your server handles locking.
+During the time your report is being generated, multiple users are altering information in the database. So, what numbers should appear in the report? The answer depends on how your server handles locking.
 
 # Locking 🔒
 
 <aside>
-📖
 
-**Locking** —  is a method of restricting access to data to ensure the correct processing of transactions
+📖**Locking** —  is a method of restricting access to data to ensure the correct processing of transactions
 
 </aside>
 

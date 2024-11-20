@@ -1,13 +1,10 @@
-# INNER JOIN
-
-# **INNER JOIN 🎯**
+# INNER JOIN 🎯
 
 This *JOIN* is used to retrieve the rows that are matched in both tables
 
 <aside>
-💡
 
-`INNER JOIN` is used to combine rows from two or more tables that are matched
+💡 `INNER JOIN` is used to combine rows from two or more tables that are matched
 
 </aside>
 
@@ -34,9 +31,8 @@ INNER JOIN aircompany ac ON f.air_company_id = ac.id
 You can implement `INNER JOIN` using the `WHERE` clause by specifying the condition that would typically be defined in the `ON` clause of an `INNER JOIN`. This approach works because an `INNER JOIN` only includes rows where the condition between the tables is met, which can also be achieved by filtering with `WHERE`.
 
 <aside>
-💡
 
-`INNER JOIN` can be implemented by using `WHERE`
+💡 `INNER JOIN` can be implemented by using `WHERE`
 
 </aside>
 

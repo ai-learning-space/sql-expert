@@ -1,5 +1,3 @@
-# DBs Creation/Deletion
-
 # Creating Databases 🌱
 
 When writing SQL queries, we actively use tables. These *tables* are stored within specific *databases*, which is the focus of this article. The syntax for creating a *database* is as follows:
@@ -16,10 +14,10 @@ CREATE DATABASE database_name;
 
 ```sql
 CREATE DATABASE my_database
-		WITH OWNER my_user
-				ENCODING 'UTF8' 
-        TEMPLATE template0 
-        CONNECTION LIMIT 100;
+    WITH OWNER my_user
+    ENCODING 'UTF8'
+    TEMPLATE template0
+    CONNECTION LIMIT 100;
 ```
 
 You can verify the creation of a database using the `SHOW DATABASES` command:

@@ -1,13 +1,10 @@
-# Single-Row Subquery
-
-# **Single-Row Subquery 1️⃣📄**
+# Single-Row Subquery 1️⃣📄
 
 In this section we will cover a subquery that returns a single row and a single column. 
 
 <aside>
-📖
 
-**Scalar Subquery** — subquery that returns single row and a single column.
+📖 **Scalar Subquery** — subquery that returns single row and a single column.
 
 </aside>
 
@@ -20,8 +17,8 @@ Let’s have a look at examples of using scalar subquery in different places of 
 *SELECT Clause:*
 
 ```sql
-	-- add "mean booking price"
-	SELECT*, (SELECT AVG(price) FROM booking) AS avg_price FROM booking;
+-- add "mean booking price"
+SELECT*, (SELECT AVG(price) FROM booking) AS avg_price FROM booking;
 ```
 
 *FROM Clause:*
@@ -29,14 +26,14 @@ Let’s have a look at examples of using scalar subquery in different places of 
 ```sql
 -- add new column without JOINs -> add mean price of apartments
 SELECT
-		apt.*,
-		apt_avg.*
+    apt.*,
+    apt_avg.*
 FROM
-		apartment apt,
-		(
-				SELECT AVG(price) AS avg_apartment_price
-				FROM apartment
-		) AS apt_avg;
+    apartment apt,
+    (
+        SELECT AVG(price) AS avg_apartment_price
+        FROM apartment
+    ) AS apt_avg;
 ```
 
 *WHERE Clause:*
@@ -59,9 +56,8 @@ HAVING AVG(price) <= (SELECT AVG(price) FROM apartment);
 ```
 
 <aside>
-💡
 
-Validate what result the subquery returns and what operators allowed with the result set
+💡 Validate what result the subquery returns and what operators allowed with the result set
 
 </aside>
 
@@ -74,7 +70,7 @@ Validate what result the subquery returns and what operators allowed with the re
 - *Powerful Aggregation Options:*
     - Useful in scenarios where simple joins wouldn’t provide the aggregated data needed.
 
-# **Important Notes ⚠️**
+# Important Notes⚠️
 
 - *Performance Impact:*
     - While convenient, scalar subqueries can slow down query execution, especially when used repeatedly in clauses like `SELECT` or `WHERE`.

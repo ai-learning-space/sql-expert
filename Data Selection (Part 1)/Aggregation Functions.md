@@ -1,23 +1,19 @@
-# Aggregation Functions
-
 # Aggregation Functions 🗃️
 
 *Aggregation functions* are powerful tools in SQL that enable users to perform calculations on multiple rows of data, returning a single value for each group of records. They play a crucial role in data analysis, allowing users to summarize and interpret large datasets effectively. 
 
 <aside>
-📖
 
-**Aggregation Function** — is a function used to perform a calculation on a set of values and returns a single value.
+📖 **Aggregation Function** — is a function used to perform a calculation on a set of values and returns a single value.
 
 </aside>
 
-*Aggregation functions* are commonly used in combination with `GROUP BY` to perform aggregation. However, they can be also applied without `GROUP BY` . Let’s quickly look at the syntax:
+*Aggregation functions* are commonly used in combination with `GROUP BY` to perform aggregation. However, they can be also applied without `GROUP BY`. Let’s quickly look at the syntax:
 
 ```sql
-
 SELECT agg_function(column_name)
 FROM table_name
-GROUP BY column_name
+GROUP BY column_name;
 ```
 
 The table below describes most common aggregation functions used in SQL:
@@ -32,13 +28,12 @@ The table below describes most common aggregation functions used in SQL:
 | `COUNT(*)` | Returns the count of records (including NULL) |
 
 <aside>
-💡
 
-Aggregation functions exclude `NULL` values except for `COUNT(*)`
+💡 Aggregation functions exclude `NULL` values except for `COUNT(*)`
 
 </aside>
 
-# **Examples** 🧪
+# Examples 🧪
 
 in “Air Travel” database, let’s find out how may flights has been done on “Boeing 777”:
 
@@ -46,7 +41,7 @@ in “Air Travel” database, let’s find out how may flights has been done on 
 SELECT plane_name, COUNT(*) AS flights_count
 FROM flight
 WHERE plane_name = 'Boeing 777'
-GROUP BY plane_name 
+GROUP BY plane_name;
 ```
 
 In “Air BnB” database, let’s find out the price of the most expensive booking:
@@ -60,12 +55,12 @@ In “Air BnB” database, find out the most expensive price for each apartment 
 
 ```sql
 SELECT
-		type AS apartment_type,
-		MAX(price) AS max_price
+    type AS apartment_type,
+    MAX(price) AS max_price
 FROM
-		apartment
+    apartment
 GROUP BY
-		type
+    type
 ```
 
 # Importance of Aggregation Functions 📌

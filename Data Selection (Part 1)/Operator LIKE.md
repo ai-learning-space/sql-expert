@@ -1,13 +1,10 @@
-# Operator LIKE
-
 # Operator LIKE 👯
 
 The data quite often contains text that may have different patterns. 
 
 <aside>
-📖
 
-`LIKE` operator in SQL is used to search for a specified pattern in a string column
+📖 `LIKE` operator in SQL is used to search for a specified pattern in a string column
 
 </aside>
 
@@ -15,10 +12,11 @@ It is especially useful when you need to filter data based on partial matches or
 
 Suppose we want to find all users whose *email* is in the second-level domain *"gmail".* This is a bit complicated since length of a string is always different and may contain unexpected characters. For such use-cases, `LIKE` is well-suited.
 
-# **LIKE Syntax ⚙️**
+# LIKE Syntax ⚙️
 
 ```sql
-... WHERE column_name [NOT] LIKE string_pattern
+... 
+WHERE column_name [NOT] LIKE string_pattern
 ```
 
 The *pattern* can include the following special characters:
@@ -61,4 +59,4 @@ SELECT job_id FROM Jobs
 WHERE progress LIKE '3!%' ESCAPE '!';
 ```
 
-If we did not escape the wildcard character, the selection would include everything starting with 3.
+If we didn't escape the wildcard character, the selection would include everything starting with 3.

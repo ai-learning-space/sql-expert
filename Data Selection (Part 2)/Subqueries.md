@@ -1,13 +1,10 @@
-# Subqueries
-
-# **Subqueries 📦**
+# Subqueries 📦
 
 Unfortunately, not all task in SQL can be done without using subqueries. For example, sometimes, you need to filter or calculate based on aggregate data that must be determined before the main query can use it. In such cases, using subqueries is must have.
 
 <aside>
-📖
 
-**Subquery —** is a query nested inside another query
+📖 **Subquery** — is a query nested inside another query
 
 </aside>
 
@@ -30,16 +27,16 @@ Let’s have a look at a single example by using *“Single-Row Subquery”* for
 SELECT *
 FROM apartment
 WHERE id = (
-		SELECT id
-		FROM apartment
-		ORDER BY price DESC
-		LIMIT 1
+    SELECT id
+    FROM apartment
+    ORDER BY price DESC
+    LIMIT 1
 );
 ```
 
 In this case, the query to obtain the most expensive room is executed as a *subquery* and the result set is then applied in the main query.
 
-# **Important Notes ⚠️**
+# Important Notes ⚠️
 
 - *Subqueries* allow for *step-by-step* problem-solving in SQL.
 - They are ideal for complex filters, aggregate comparisons and dependency on values calculated by other queries.

@@ -1,37 +1,32 @@
-# Views
-
 # Views 🖼️
 
 Well-designed applications often provide a public interface that hides implementation details, allowing for design changes without impacting end users. When designing your *database*, you can achieve a similar outcome by concealing tables and granting access to data exclusively through a set of *views*.
 
-# What is a View? **🤔**
+# What is a View? 🤔
 
 <aside>
-📖
 
-**View** — is a database object that represents the result of a query executed against the database, defined using a `SELECT` statement at the time the view is accessed.
+📖 **View** — is a database object that represents the result of a query executed against the database, defined using a `SELECT` statement at the time the view is accessed.
 
 </aside>
 
 *Views* are sometimes referred to as *"virtual tables"* because they appear to users as tables
 
 <aside>
-💡
 
-Views don’t store data themselves. They retrieve data from other tables when are used
+💡 Views don’t store data themselves. They retrieve data from other tables when are used
 
 </aside>
 
 If the data in the underlying table changes, the user receives updated information when accessing the view that utilizes that table. 
 
 <aside>
-💡
 
-Views don’t cache the results of queries
+💡 Views don’t cache the results of queries
 
 </aside>
 
-# View Syntax **⚙️**
+# View Syntax ⚙️
 
 A *view* is created by using the following syntax:
 
@@ -50,8 +45,8 @@ Instead of granting direct access to the *Users* table, you define a view named 
 ```sql
 CREATE VIEW ViewUsers AS
     SELECT id,
-           name,
-           CONCAT(SUBSTR(email, 1, 2), '****', SUBSTR(email, -4)) AS email
+    name,
+    CONCAT(SUBSTR(email, 1, 2), '****', SUBSTR(email, -4)) AS email
 FROM Users;
 ```
 
@@ -76,7 +71,7 @@ name       varchar(32)   NO              <NULL>
 email      varchar(38)   YES             <NULL>
 ```
 
-# Why Use Views? **🤔**
+# Why Use Views?🤔
 
 - *Simplifying Complex Queries:*
     - *Views* are used to simplify complex queries and create an abstraction layer between the user and the database. They can hide the complexity of the data structure and provide a streamlined interface for data access.

@@ -1,5 +1,3 @@
-# Date and Time
-
 # Date and Time 📅
 
 SQL provides robust support for handling *date and time* data through various data types and functions. *Date* and *time* are crucial for tracking records, performing time-based calculations and scheduling events in databases.
@@ -24,7 +22,7 @@ Let’s generate some examples:
 
 ```sql
 SELECT
-		CAST("2022-06-16 16:37:23" AS DATETIME) AS datetime_1,
+    CAST("2022-06-16 16:37:23" AS DATETIME) AS datetime_1,
     CAST("2014/02/22 16*37*22" AS DATETIME) AS datetime_2,
     CAST("20220616163723" AS DATETIME) AS datetime_3,
     CAST("2021-02-12" AS DATE) AS date_1,

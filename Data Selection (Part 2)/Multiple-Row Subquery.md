@@ -1,13 +1,10 @@
-# Multiple-Row Subquery
-
-# **Multiple-Row Subquery 2️⃣📄**
+# Multiple-Row Subquery 2️⃣📄
 
 Subquery may not always return a single value, as opposed to a scalar subquery. *Multiple-row subqueries* are typically used when we want to compare a value to a list of possible matches or fetch a subset of data that can be compared with multiple values in the main query.
 
 <aside>
-📖
 
-**Multiple-Row Subquery** is a subquery that returns more than one row of results.
+📖 **Multiple-Row Subquery** is a subquery that returns more than one row of results.
 
 </aside>
 
@@ -16,9 +13,8 @@ Since the subquery can return multiple values, it must be used with specific ope
 # ALL Operator 👐
 
 <aside>
-📖
 
-`ALL` operator is used to compare a value to every value in a list or the result of a subquery
+📖 `ALL` operator is used to compare a value to every value in a list or the result of a subquery
 
 </aside>
 
@@ -40,15 +36,14 @@ SELECT 200 > ALL(SELECT price FROM apartment);
 # ANY Operator 🔄
 
 <aside>
-📖
 
-`ANY` operator compares a value to any value in a list or the result of a subquery
+📖 `ANY` operator compares a value to any value in a list or the result of a subquery
 
 </aside>
 
 It is used with comparison operators such as `=, >, <, >=, <=, <>` . The `ANY` operator returns *true* if at least one of the values in the list or subquery satisfies the condition.
 
-### ***ANY Logic*** 🧩
+### ANY Logic 🧩
 
 - When you use `ANY`, the comparison condition is evaluated against each value returned by the subquery.
 - If at least one comparison is `TRUE`, the overall condition is `TRUE`.
@@ -70,20 +65,19 @@ WHERE id = ANY (
 # IN Operator 👉
 
 <aside>
-📖
 
-`IN` operator is used to check whether a value matches any value within a list or a subquery
+📖 `IN` operator is used to check whether a value matches any value within a list or a subquery
 
 </aside>
 
 It simplifies multiple `OR` conditions and is commonly used for filtering rows based on a set of values.
 
-### ***IN Logic*** 🧩
+### IN Logic 🧩
 
 - The `IN` operator allows you to compare a value against a list of values. If the value matches any of the values in the list, the condition evaluates to `TRUE`.
 - It can be used with both static value lists and subqueries that return a set of values.
 
-### **Example** 🧪
+### Example 🧪
 
 Let’s find all information about owners of properties priced above 150:
 

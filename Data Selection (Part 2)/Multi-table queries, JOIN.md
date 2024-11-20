@@ -1,5 +1,3 @@
-# Multi-table queries, JOIN
-
 # Multi-Table Queries, JOINs 🤝
 
 In SQL, we usually deal with many tables, and it’s unlikely in real life that you’ll need to work with just a single table. Most databases are structured with multiple tables that store related information separately to improve organization, reduce redundancy and maintain data integrity. To analyze data or generate reports, we often need to combine data from these tables, which is where SQL `JOIN` operations come in.
@@ -12,10 +10,10 @@ To link several tables together, we need to use the following syntax of *JOIN*. 
 
 ```sql
 SELECT
-		f.plane_name,
-		f.departure_city,
-		f.arrival_city,
-		ac.name AS air_company_name
+    f.plane_name,
+    f.departure_city,
+    f.arrival_city,
+    ac.name AS air_company_name
 FROM flight f
 INNER JOIN aircompany ac ON f.air_company_id = ac.id
 ```
@@ -30,9 +28,8 @@ INNER | LEFT | RIGHT | FULL JOIN JOIN table_n ON join_condition
 ```
 
 <aside>
-💡
 
-Many different *JOINs* can be used in a single query
+💡 Many different *JOINs* can be used in a single query
 
 </aside>
 
@@ -56,7 +53,7 @@ How can this be done? It's simple! Just prepend the table name before the `*` sy
 
 ```sql
 SELECT
-		f.*, ac.*
+    f.*, ac.*
 FROM flight f
 INNER JOIN aircompany ac ON f.air_company_id = ac.id
 ```

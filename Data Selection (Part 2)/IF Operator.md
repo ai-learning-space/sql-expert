@@ -1,13 +1,10 @@
-# IF Operator
-
 # IF Operator ⚖️
 
 The `IF` operator in SQL is used to execute conditional logic within queries. While SQL itself doesn’t have a direct `IF` statement like traditional programming languages, the functionality can be achieved using the `CASE` statement or specific database functions, depending on the SQL dialect you are using.
 
 <aside>
-📖
 
-`IF` — is a conditional function that allows performing conditional logic within queries
+📖 `IF` — is a conditional function that allows performing conditional logic within queries
 
 </aside>
 
@@ -50,52 +47,50 @@ If the price is greater than or equal to 150, then the housing is classified as 
 
 ```sql
 SELECT
-		id,
-		price,
+    id,
+    price,
     IF(price >= 150, "*Comfort Class*", "*Economy Class*") AS category
 FROM Rooms;
 ```
 
 <aside>
-💡
 
-`IF` might be nested inside another `IF`
+💡 `IF` might be nested inside another `IF`
 
 </aside>
 
 ```sql
 SELECT
-		id,
-		price,
+    id,
+    price,
     IF(
-		    price >= 200, "Business-Class",
-		    IF(price >= 150, "*Comfort Class*", "*Economy Class*")
+        price >= 200, "Business-Class",
+        IF(price >= 150, "*Comfort Class*", "*Economy Class*")
     ) AS category
 FROM Rooms;
 ```
 
-# **IFNULL and NULLIF 🤷‍♂️**
+# IFNULL and NULLIF 🤷‍♂️
 
 <aside>
-💡
 
+💡
 - `IFNULL` — returns a specified value if the expression is `NULL`
 - If the expression is not `NULL`, it returns the expression's original value.
+
 </aside>
 
 <aside>
-💡
 
-`IFNULL` is useful for replacing `NULL` values with a default value
+💡 `IFNULL` is useful for replacing `NULL` values with a default value
 
 </aside>
 
 Replacing `NULL` values can be helpful in preventing issues in calculations or reporting
 
 <aside>
-💡
 
-`NULLIF` function compares two expressions and returns `NULL` if they are equal; otherwise, it returns the first expression. 
+💡 `NULLIF` function compares two expressions and returns `NULL` if they are equal; otherwise, it returns the first expression. 
 
 </aside>
 
@@ -115,7 +110,7 @@ SELECT IFNULL(NULL, "Alternative SQL Academy") AS sql_trainer;
 SELECT NULLIF("SQL Academy", "SQL Academy") AS sql_trainer;
 ```
 
-# Important Notes **⚠️**
+# Important Notes ⚠️
 
 - *Database Compatibility:*
     - The `IF` function is not available in all SQL dialects (like SQL Server or PostgreSQL). You may need to use the `CASE` statement instead.

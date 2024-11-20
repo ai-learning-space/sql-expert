@@ -1,5 +1,3 @@
 # Community
 
-# Community
-
 TODO …

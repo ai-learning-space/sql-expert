@@ -1,13 +1,10 @@
-# Operator REGEXP
-
 # Operator REGEXP 🗒️
 
 Sometimes string columns might be so different and complex that even with operator `LIKE` you will be unable to solve your task. In this case you can use more advanced approach called *regular expressions*.
 
 <aside>
-📖
 
-`REGEX` is used to perform advanced pattern matching within string data
+📖 `REGEX` is used to perform advanced pattern matching within string data
 
 </aside>
 
@@ -30,25 +27,24 @@ FROM planes
 WHERE model REGEXP '[0-9]{3}';
 ```
 
-# **REGEXP or LIKE? 🤔**
+# REGEXP or LIKE? 🤔
 
 The `LIKE` operator is convenient for simple search patterns, such as finding strings that start or end with a specific set of characters or contain certain substrings. However, if more complex and flexible searching is required — such as searching with multiple conditions or using special characters and ranges — the `REGEXP` operator becomes an indispensable tool.
 
 <aside>
-💡
 
-Use `REGEXP` when complex and flexible searching is required!
+💡 Use `REGEXP` when complex and flexible searching is required!
 
 </aside>
 
-# **Regular Expression Syntax ⚙️**
+# Regular Expression Syntax ⚙️
 
 - **Case Insensitivity**
     - By default, regular expressions in are *case-insensitive*. The expression `REGEXP 'abc'` will find strings like `abc`, `Abc`, and `ABC`.
 - **Escape Characters**
     - Certain characters have special meanings in regular expressions and require escaping (e.g. **, +, ?, [, ], (, ), {, }, |, \*). The backslash `\\` is used for escaping.
 
-# **Special Characters and Structures 📜**
+# Special Characters and Structures 📜
 
 | **Characters/Structures** | **Description** |
 | --- | --- |
@@ -93,7 +89,7 @@ FROM passenger
 WHERE plane_name REGEXP 'Boeing (737|777)$';
 ```
 
-# **Important Notes ⚠️**
+# Important Notes ⚠️
 
 - `REGEXP` offers powerful search capabilities far beyond than `LIKE`
 - *Regular expressions* are highly flexible, allowing complex search criteria like multiple conditions, ranges of characters or repeated patterns.
