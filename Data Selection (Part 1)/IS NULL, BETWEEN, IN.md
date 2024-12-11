@@ -33,7 +33,7 @@ Sometimes we need to select only those records where values are between specific
 
 <aside>
 
-💡 `BETWEEN` is used to filter the result set within a specified range including start and end
+💡 `BETWEEN` is used to filter the result set within a specified range including start and end.
 
 </aside>
 
@@ -54,7 +54,7 @@ If we are interested in only specific values, we can specify them by using `IN`
 
 <aside>
 
-💡 `IN` is used to specify multiple possible values for a column
+💡 `IN` is used to specify multiple possible values for a column.
 
 </aside>
 

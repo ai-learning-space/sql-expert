@@ -16,17 +16,17 @@ Below picture demonstrates visual difference between `GROUP BY` and `Window Func
 
 # How Does it Work? 🤔
 
-You might wonder: *"What does 'window' mean?".* In a standard SQL query, all sets of rows are treated as a single continuous block of data, for which aggregate values are computed.
+You might wonder, *"What does 'window' mean?".* In a standard SQL query, all sets of rows are treated as a single continuous block of data, for which aggregate values are computed.
 
 However, when *window functions* are applied, the query is segmented into groups of rows or *"windows"* and individual aggregate values are calculated for each of these segments. The window that we pass into a function can be:
 
-- *Entire table*
-- *Table Partition*
-- *Range of Rows within a Table or Partition*
+- Entire table
+- Table Partition
+- Range of Rows within a Table or Partition
 
 # Logic Visualization 📈
 
-Let’s illustrate how a window function works by computing number of unique records for the “flight” table. First, we have to define what our windows will be. If you specify the entire table as the window, then the window will be the same for all rows and the same set of data will be fed to the *COUNT* function input and, accordingly, the result will be the same. 
+Let’s illustrate how a window function works by computing the number of unique records for the _flight table_. First, we have to define what our windows will be. If you specify the entire table as the window, then the window will be the same for all rows and the same set of data will be fed to the `COUNT` function input and, accordingly, the result will be the same. 
 
 ![window-count.png](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/Advanced%20SQL/img/window-count.png)
 
@@ -34,7 +34,7 @@ Now, let’s check how the window function operates with different windows. For 
 
 <aside>
 
-📖 **Partitioning** — divides the data into smaller subsets or *"partitions"* based on specified column values
+📖 **Partitioning** — divides the data into smaller subsets or *"partitions"* based on specified column values.
 
 </aside>
 
@@ -57,15 +57,18 @@ OVER (
 )
 ```
 
-- `window_function(column_name)` — is the window function used (e.g. `AVG(price)`)
+- `window_function(column_name)` — is the window function used, e.g. `AVG(price)`
 - `OVER` — defines the window (group of rows) that will be passed to the window function.
-    - If the `OVER` clause is left without parameters, the entire table will serve as the window.
+    - If the _OVER_ clause is left without parameters, the entire table will serve as the window.
 
 Now, to calculate the number of students in each class and display this information in a new column, we can use a window function:
 
-- `PARTITION BY columns_for_partitioning` divides the result set into non-overlapping subsets, where each subset contains rows with the same values in one or more columns, forming partitions.
-- `ORDER BY columns_for_sorting` sets the order of rows within the window, which is particularly important in ranking window functions.
-- `ROWS|RANGE row_range_definition` defines ranges of rows. This parameter specifies how many rows to include before and after the current row in the window.
+- `PARTITION BY <columns for partitioning>`
+    - Divides the result set into non-overlapping subsets, where each subset contains rows with the same values in one or more columns, forming partitions.
+- `ORDER BY <columns for sorting>` 
+    - Sets the order of rows within the window, which is particularly important in ranking window functions.
+- `ROWS|RANGE <row range definition>` 
+    - Defines ranges of rows. This parameter specifies how many rows to include before and after the current row in the window.
 
 # Window Function Example 🧪
 
@@ -80,17 +83,17 @@ FROM
 INNER JOIN aircompany ac ON ac.id = f.air_company_id;
 ```
 
-- First we join a table `aircompany` to get names of air companies in the final output
+- First we join a table _"Aircompany"_ to get names of air companies in the final output
 - To get the count of unique planes, we use `COUNT(DISTINCT plane_name)`
-- Since we want the result per air company, we apply `PARTITION BY air company name`
+- Since we want the result per air company, we apply `PARTITION BY <air company name>`
 
 # Window Function Advantages ⚡
 
-- *Flexible Data Analysis:*
-    - Window functions support tasks like ranking, running totals, moving averages and lag/lead analysis, which are crucial in time series analysis, financial reporting and trend analysis.
-- *Partitioned and Ordered Calculations:*
-    - By defining partitions and ordering, you can apply calculations across specific groups (e.g., by department, month) and order the data within each group, giving highly customizable insights.
-- *Efficient Performance:*
+- ***Flexible Data Analysis:***
+    - Window functions support tasks like _ranking_, _running totals_, _moving averages_ and _lag/lead_ analysis, which are crucial in time series analysis, financial reporting and trend analysis.
+- ***Partitioned and Ordered Calculations:***
+    - By defining _partitions_ and _ordering_, you can apply calculations across specific groups (e.g., by department, month) and order the data within each group, giving highly customizable insights.
+- ***Efficient Performance:***
     - SQL window functions are often optimized for performance within databases, enabling faster execution for complex row-wise calculations compared to some traditional grouping and subquery techniques.
-- *Enhanced Ranking and Row Comparison:*
+- ***Enhanced Ranking and Row Comparison:***
     - With functions like `RANK()`, `ROW_NUMBER()`, `LAG()` and `LEAD()`, window functions allow easy row-to-row comparison, making them ideal for hierarchical ranking and trend analysis.

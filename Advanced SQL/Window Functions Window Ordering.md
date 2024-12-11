@@ -57,4 +57,6 @@ OVER (
 
 In addition to the `PARTITION BY` and `ORDER BY` clauses, there is an optional `ROWS|RANGE` clause. We will discuss this in detail in the next article, but for now, it’s important to understand its purpose. It allows you to specify the window bounds relative to the current row that will be used for calculations in the window function.
 
-Thus, you can specify that when calculating values for the current row, the window function should include only N records before the current row and N after it, rather than all records within the current partition. When using `ORDER BY`, if nothing is specified in the `ROWS|RANGE` clause, the window function automatically applies the rule `RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`. This means that the window will start from the first row and end at the current row.
+Thus, you can specify that when calculating values for the current row, the window function should include only N records before the current row and N after it, rather than all records within the current partition. When using `ORDER BY`, if nothing is specified in the `ROWS|RANGE` clause, the window function automatically applies the rule `RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`.
+
+This means that the window will start from the first row and end at the current row.

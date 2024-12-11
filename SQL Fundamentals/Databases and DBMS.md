@@ -6,7 +6,7 @@ We will discuss the different types of databases, their architecture, and the ma
 
 <aside>
 
-📖 **Database** — organized collection of data stored in a structured manner
+📖 **Database** — organized collection of data stored in a structured manner.
 
 </aside>
 
@@ -20,7 +20,7 @@ Unfortunately, databases themselves are not useful without systems that allow yo
 
 <aside>
 
-📖 **DBMS** — set of tools and languages that allow access, create, modify and delete data, as well as ensure the security and integrity of the information
+📖 **DBMS** — set of tools and languages that allow access, create, modify and delete data, as well as ensure the security and integrity of the information.
 
 </aside>
 

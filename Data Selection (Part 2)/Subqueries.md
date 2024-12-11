@@ -4,7 +4,7 @@ Unfortunately, not all task in SQL can be done without using subqueries. For exa
 
 <aside>
 
-📖 **Subquery** — is a query nested inside another query
+📖 **Subquery** — is a query nested inside another query.
 
 </aside>
 
@@ -17,7 +17,7 @@ Subqueries have different types:
 - *Single-Row Subquery*: returns only one row.
 - *Multiple-Row Subquery:* returns multiple rows.
 - *Multiple-Column Subquery:* returns multiple columns.
-- *Correlated Subquery:* ****subquery that references columns from the outer query.
+- *Correlated Subquery:* subquery that references columns from the outer query.
 
 # Subquery Example 🧪
 

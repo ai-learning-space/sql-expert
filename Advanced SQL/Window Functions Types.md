@@ -1,12 +1,12 @@
 # Window Functions Types 🔍📊
 
-We explored how *window functions* work and introduced the concept of a *data window* that is passed to a *window function*. Now it's time to examine the different types of window functions.
+We explored how window functions work and introduced the concept of a _data window_ that is passed to a window function. Now it's time to examine the different types of window functions.
 
 Window functions can be categorized into three groups:
 
-- *Aggregate Window Functions* 📊
-- *Ranking Window Functions* 🥇🥈🥉
-- *Offset Window Functions* ⬅️➡️
+- Aggregate Window Functions 📊
+- Ranking Window Functions 🥇🥈🥉
+- Offset Window Functions ⬅️➡️
 
 ![window-function-types.png](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/Advanced%20SQL/img/window-function-types.png)
 
@@ -14,7 +14,7 @@ Window functions can be categorized into three groups:
 
 <aside>
 
-📖**Aggregate Window Functions** —  perform arithmetic calculations on a dataset and return a single summary value
+📖**Aggregate Window Functions** — perform arithmetic calculations on a dataset and return a single summary value.
 
 </aside>
 
@@ -26,7 +26,7 @@ For example:
 - `MAX` **→** finds the biggest value
 - `MIN` **→** determines the lowest value
 
-Let’s practice the above functions on “Apartments” table:
+Let’s practice the above functions on _“Apartments”_ table:
 
 ```sql
 SELECT
@@ -44,9 +44,9 @@ FROM apartment;
 
 Ranking window functions assign a rank to each value within a window. In ranking functions, the keyword `OVER` requires the specification of an `ORDER BY` clause, which determines the sorting order for the ranking.
 
-- `ROW_NUMBER` **→** returns the row number, used for numbering
-- `RANK` **→** returns the rank of each row
-- `DENSE_RANK` **→** similar to *RANK*, but it assigns ranks without skipping any values for tied rows
+- `ROW_NUMBER` **→** returns the row number, used for numbering.
+- `RANK` **→** returns the rank of each row.
+- `DENSE_RANK` **→** similar to *RANK*, but it assigns ranks without skipping any values for tied rows.
 
 ```sql
 SELECT
@@ -58,13 +58,18 @@ SELECT
 FROM apartment;
 ```
 
-For example, the function *RANK* works in the following way:
+For example, the function `RANK` works in the following way:
 
-1. *Sorting*: first, rows are sorted based on one or more specified columns in the `ORDER BY` clause within the `OVER` construct.
-2. *Assigning Ranks:* each unique row or group of rows with identical sorting values is assigned a *rank*, starting from 1.
-3. *Tied Values*: if multiple rows have the same sorting values, they receive the same rank. For example, if two rows are tied for second place, both will receive a *rank* of 2.
-4. *Skipping Ranks:* after a group of rows with the same rank, the next rank increases by the number of rows in that group. For example, if two rows have a rank of 2, the next row will receive a rank of 4, not 3.
-5. *Continuing the Sorting:* this process continues until all rows in the result set are assigned ranks.
+1. ***Sorting***: 
+    - First, rows are sorted based on one or more specified columns in the `ORDER BY` clause within the `OVER` construct.
+2. ***Assigning Ranks:*** 
+    - Each unique row or group of rows with identical sorting values is assigned a *rank*, starting from 1.
+3. ***Tied Values***: 
+    - If multiple rows have the same sorting values, they receive the same rank. For example, if two rows are tied for second place, both will receive a *rank* of 2.
+4. ***Skipping Ranks:***
+    - After a group of rows with the same rank, the next rank increases by the number of rows in that group. For example, if two rows have a rank of 2, the next row will receive a rank of 4, not 3.
+5. ***Continuing the Sorting:***
+    - This process continues until all rows in the result set are assigned ranks.
 
 # Offset Window Functions ⬅️➡️
 

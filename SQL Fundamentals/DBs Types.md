@@ -4,7 +4,7 @@ In this section of the course, we'll explore the different types of databases us
 
 In the real world, you’ll most likely encounter the following types:
 
-- *Relational* databases *🔗*
+- *Relational* databases 🔗
 - *Key-value* databases 🔑
 - *Document-oriented* databases 📄
 

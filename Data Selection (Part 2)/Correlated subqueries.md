@@ -33,18 +33,18 @@ In this case, the correlated subquery references the `member_id` column from the
 
 # Advantages ⚡
 
-- *Dynamic Filtering:*
+- ***Dynamic Filtering:***
     - They allow dynamic filtering based on outer query values, useful for customized, row-specific criteria.
-- *Simplifies Nested Logic:*
+- ***Simplifies Nested Logic:***
     - Complex conditions involving multiple table comparisons can be simplified with correlated subqueries rather than lengthy joins or conditional logic.
-- *Effective for Dependent Data:*
+- ***Effective for Dependent Data:***
     - *Correlated subqueries* are well-suited for cases where rows in one table depend on specific conditions in another table.
 
 # Important Notes ⚠️
 
-- *Performance Impact:*
+- ***Performance Impact:***
     - Since correlated subqueries run for each row in the outer query, they can be slower, especially with large data sets. Consider indexing columns used in the subquery to improve performance.
-- *Limited to Certain Clauses:*
-    - Correlated subqueries work best in `WHERE`, `SELECT`, and `HAVING` clauses but are less suited for some clauses like `FROM`.
-- *Complex Readability:*
+- ***Limited to Certain Clauses:***
+    - Correlated subqueries work best in `WHERE`, `SELECT` and `HAVING` clauses but are less suited for some clauses like `FROM`.
+- ***Complex Readability:***
     - Because of the dependency on the outer query, correlated subqueries can make SQL statements harder to read and maintain. Clear comments or simpler alternative queries can help mitigate this.

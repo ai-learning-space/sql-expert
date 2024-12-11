@@ -4,7 +4,7 @@ Sometimes we have queries that are so complicated that even using subqueries doe
 
 <aside>
 
-📖 **Common Table Expression (CTE)** **→** is a temporary result set that you can define in a query
+📖 **Common Table Expression (CTE)** **→** is a temporary result set that you can define in a query.
 
 </aside>
 
@@ -12,7 +12,7 @@ Sometimes we have queries that are so complicated that even using subqueries doe
 
 <aside>
 
-💡 **CTEs** are often used as an alternative to subqueries 
+💡 **CTEs** are often used as an alternative to subqueries.
 
 </aside>
 
@@ -22,13 +22,9 @@ Sometimes we have queries that are so complicated that even using subqueries doe
 - It improves query readability by allowing you to structure a query in logical steps.
 - You can reference the *CTE* multiple times within the same query, eliminating the need to repeat complex subqueries.
 
-<aside>
-
-💡 The expression `WITH` is considered *"temporary"* because the result is not stored permanently in the database schema. It acts as a temporary representation that exists only during the execution of the query.
+The expression `WITH` is considered *"temporary"* because the result is not stored permanently in the database schema. It acts as a temporary representation that exists only during the execution of the query.
 
 It is valid only within the query to which it belongs, allowing for improved query structure without cluttering the global namespace.
-
-</aside>
 
 # CTE Example 🧪
 
@@ -68,14 +64,14 @@ GROUP BY plane_name;
 
 # Advantages ⚡
 
-- **Improved Readability**:
+- ***Improved Readability***
     - CTEs break down complex queries into named steps, making SQL easier to understand and maintain.
-- **Reusability**:
+- ***Reusability***
     - You can define complex logic once in a CTE and reuse it in multiple parts of the query.
 
 # Important Notes ⚠️
 
-- **SQL Dialect Compatibility**:
+- ***SQL Dialect Compatibility***
     - Not all SQL databases support *CTEs* n the same way, so be sure to check the capabilities of your database.
-- **Temporary Scope**:
+- ***Temporary Scope***
     - CTEs are only valid within the query where they’re defined, so they cannot be reused across different queries

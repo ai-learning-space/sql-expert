@@ -57,9 +57,9 @@ FROM Class
 
 # Important Notes ⚠️
 
-- *Performance:*
+- ***Performance:***
     - While the `CASE` operator is efficient, overly complex conditions can impact query performance. It's advisable to keep conditions straightforward.
-- *Null Handling:*
+- ***Null Handling:***
     - Be aware of how `NULL` values are treated in conditions, as they can affect the outcome of the `CASE` evaluation.
-- *Readability:*
+- ***Readability:***
     - Use clear and concise `CASE` expressions for better readability, especially in complex queries.

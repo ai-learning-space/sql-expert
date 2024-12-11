@@ -4,7 +4,7 @@ Sometimes string columns might be so different and complex that even with operat
 
 <aside>
 
-📖 `REGEX` is used to perform advanced pattern matching within string data
+📖 `REGEX` is used to perform advanced pattern matching within string data.
 
 </aside>
 

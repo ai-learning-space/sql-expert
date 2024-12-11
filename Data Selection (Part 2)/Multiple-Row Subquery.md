@@ -14,11 +14,11 @@ Since the subquery can return multiple values, it must be used with specific ope
 
 <aside>
 
-📖 `ALL` operator is used to compare a value to every value in a list or the result of a subquery
+📖 `ALL` operator is used to compare a value to every value in a list or the result of a subquery.
 
 </aside>
 
-It ensures that a condition is *true* for *all values* returned by the subquery. The `ALL` operator works with comparison operators like `=, >, <, >=, <=, <>` 
+It ensures that a condition is *true* for *all values* returned by the subquery. The `ALL` operator works with comparison operators like `=, >, <, >=, <=, <>`.
 
 ### ALL Logic 🧩
 
@@ -37,7 +37,7 @@ SELECT 200 > ALL(SELECT price FROM apartment);
 
 <aside>
 
-📖 `ANY` operator compares a value to any value in a list or the result of a subquery
+📖 `ANY` operator compares a value to any value in a list or the result of a subquery.
 
 </aside>
 
@@ -66,7 +66,7 @@ WHERE id = ANY (
 
 <aside>
 
-📖 `IN` operator is used to check whether a value matches any value within a list or a subquery
+📖 `IN` operator is used to check whether a value matches any value within a list or a subquery.
 
 </aside>
 
@@ -93,9 +93,9 @@ WHERE id IN (
 
 # Advantages ⚡
 
-- *Flexible Comparison:*
+- ***Flexible Comparison:***
     - Multiple-row subqueries allow for dynamic comparisons against a set of values, making it easy to filter data based on complex conditions.
-- *Dynamic Filtering:*
+- ***Dynamic Filtering:***
     - With operators like `IN` or `EXISTS`, they can filter data dynamically, adapting to changes in related tables without modifying the main query.
-- *Support for Correlated Logic:*
+- ***Support for Correlated Logic:***
     - Using correlated subqueries with `EXISTS`, you can achieve row-by-row comparisons that are difficult to replicate with simple joins.

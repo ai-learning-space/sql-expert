@@ -2,7 +2,7 @@
 
 <aside>
 
-💡 By default, DBMS doesn’t place the data in an optimal order
+💡 By default, DBMS doesn’t place the data in an optimal order.
 
 </aside>
 

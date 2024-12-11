@@ -4,7 +4,7 @@ This *JOIN* is used to retrieve the rows that are matched in both tables
 
 <aside>
 
-💡 `INNER JOIN` is used to combine rows from two or more tables that are matched
+💡 `INNER JOIN` is used to combine rows from two or more tables that are matched.
 
 </aside>
 
@@ -32,7 +32,7 @@ You can implement `INNER JOIN` using the `WHERE` clause by specifying the condit
 
 <aside>
 
-💡 `INNER JOIN` can be implemented by using `WHERE`
+💡 `INNER JOIN` can be implemented by using `WHERE`.
 
 </aside>
 

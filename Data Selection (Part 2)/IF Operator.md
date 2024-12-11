@@ -4,7 +4,7 @@ The `IF` operator in SQL is used to execute conditional logic within queries. Wh
 
 <aside>
 
-📖 `IF` — is a conditional function that allows performing conditional logic within queries
+📖 `IF` — is a conditional function that allows performing conditional logic within queries.
 
 </aside>
 
@@ -25,11 +25,11 @@ IF(condition_expression, value_if_true, value_if_false);
 
 In practice, `IF` is often used in the following use cases:
 
-- *Data Categorization:*
+- ***Data Categorization:***
     - Classifying data into categories based on certain conditions, such as labeling products as *"On Sale"* or *"Regular Price"*
-- *Conditional Aggregation:*
+- ***Conditional Aggregation:***
     - Using the `IF` operator in aggregation functions to calculate sums or counts based on specific conditions.
-- *Dynamic Outputs:*
+- ***Dynamic Outputs:***
     - Creating dynamic outputs in reports or dashboards by returning different values based on user-defined conditions.
 
 For example, let’s create a simple comparison of two numbers:
@@ -49,15 +49,12 @@ If the price is greater than or equal to 150, then the housing is classified as 
 SELECT
     id,
     price,
-    IF(price >= 150, "*Comfort Class*", "*Economy Class*") AS category
+    IF(price >= 150, "Comfort Class", "Economy Class") AS category
 FROM Rooms;
 ```
 
-<aside>
+💡 `IF` might be nested inside another `IF`.
 
-💡 `IF` might be nested inside another `IF`
-
-</aside>
 
 ```sql
 SELECT
@@ -65,28 +62,18 @@ SELECT
     price,
     IF(
         price >= 200, "Business-Class",
-        IF(price >= 150, "*Comfort Class*", "*Economy Class*")
+        IF(price >= 150, "Comfort Class", "Economy Class")
     ) AS category
 FROM Rooms;
 ```
 
 # IFNULL and NULLIF 🤷‍♂️
 
-<aside>
-
-💡
-- `IFNULL` — returns a specified value if the expression is `NULL`
+- `IFNULL` — returns a specified value if the expression is `NULL`.
+- `IFNULL` is useful for replacing `NULL` values with a default value.
 - If the expression is not `NULL`, it returns the expression's original value.
 
-</aside>
-
-<aside>
-
-💡 `IFNULL` is useful for replacing `NULL` values with a default value
-
-</aside>
-
-Replacing `NULL` values can be helpful in preventing issues in calculations or reporting
+Replacing `NULL` values can be helpful in preventing issues in calculations or reportingю
 
 <aside>
 
@@ -112,9 +99,9 @@ SELECT NULLIF("SQL Academy", "SQL Academy") AS sql_trainer;
 
 # Important Notes ⚠️
 
-- *Database Compatibility:*
+- ***Database Compatibility:***
     - The `IF` function is not available in all SQL dialects (like SQL Server or PostgreSQL). You may need to use the `CASE` statement instead.
-- *Performance:*
+- ***Performance:***
     - Simple conditions should be preferred for performance reasons, as complex evaluations can slow down query execution.
-- *Null Handling:*
+- ***Null Handling:***
     - Be cautious with `NULL` values in conditions, as they may affect the evaluation of the `IF` statement.

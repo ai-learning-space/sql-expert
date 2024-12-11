@@ -29,7 +29,7 @@ INNER | LEFT | RIGHT | FULL JOIN JOIN table_n ON join_condition
 
 <aside>
 
-💡 Many different *JOINs* can be used in a single query
+💡 Many different *JOINs* can be used in a single query.
 
 </aside>
 
@@ -37,7 +37,7 @@ INNER | LEFT | RIGHT | FULL JOIN JOIN table_n ON join_condition
 
 There are many types of different *JOINs:*
 
-| J**oin Type** | **Description** | **Result** |
+| **Join Type** | **Description** | **Result** |
 | --- | --- | --- |
 | `INNER JOIN`  | Returns rows that have matching values in both tables. | Only rows where there is a match in both tables are returned. Rows with no match in either table are excluded. |
 | `LEFT JOIN` | Returns all rows from the left table and the matching rows from the right table. | All rows from the left table are included. If there is no match in the right table, `NULL` values are returned for columns from the right table. |

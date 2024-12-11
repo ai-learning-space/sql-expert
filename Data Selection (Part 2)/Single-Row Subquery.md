@@ -18,7 +18,7 @@ Let’s have a look at examples of using scalar subquery in different places of 
 
 ```sql
 -- add "mean booking price"
-SELECT*, (SELECT AVG(price) FROM booking) AS avg_price FROM booking;
+SELECT *, (SELECT AVG(price) FROM booking) AS avg_price FROM booking;
 ```
 
 *FROM Clause:*
@@ -63,16 +63,16 @@ HAVING AVG(price) <= (SELECT AVG(price) FROM apartment);
 
 # Advantages ⚡
 
-- *Improved Readability:*
+- ***Improved Readability:***
     - Scalar subqueries can make complex queries more readable by encapsulating calculations or values you need repeatedly.
-- *Modular Calculations:*
+- ***Modular Calculations:***
     - They allow you to handle calculations separately within the query.
-- *Powerful Aggregation Options:*
+- ***Powerful Aggregation Options:***
     - Useful in scenarios where simple joins wouldn’t provide the aggregated data needed.
 
 # Important Notes⚠️
 
-- *Performance Impact:*
+- ***Performance Impact:***
     - While convenient, scalar subqueries can slow down query execution, especially when used repeatedly in clauses like `SELECT` or `WHERE`.
-- *Usage Limits:*
+- ***Usage Limits:***
     - Scalar subqueries should ideally return only one row. If they accidentally return more, SQL will produce an error. Use `LIMIT` or other filters if you’re not certain it will always be a single value.

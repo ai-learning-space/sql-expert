@@ -1,10 +1,10 @@
 # Literals in SQL 🧮
 
-Data Analysts quite often encounter situations when they have to provide fixed values in queries. In this cases they use *literals* to make their life easier. 
+Data Analysts quite often encounter situations when they have to provide fixed values in queries. In these cases they use *literals* to make their life easier. 
 
 <aside>
 
-📖 **Literals** — fixed values that are directly written into a query
+📖 **Literals** — fixed values that are directly written into a query.
 
 </aside>
 
@@ -14,7 +14,7 @@ These values aren’t associated with any column or table and they represent con
 
 <aside>
 
-📖 **String Literals** — sequences of characters enclosed in single/double quotes
+📖 **String Literals** — sequences of characters enclosed in single/double quotes.
 
 </aside>
 
@@ -38,7 +38,7 @@ WHERE type = 'Private room'; -- 'Private room' is a string literal
 
 <aside>
 
-📖 **Numeric Literals** — numerical values (integers or decimals)
+📖 **Numeric Literals** — numerical values (integers or decimals).
 
 </aside>
 
@@ -68,7 +68,7 @@ The table below shows a bit more information about numeric literals:
 
 <aside>
 
-📖 **Arithmetic Literals** — any arithmetic expressions
+📖 **Arithmetic Literals** — any arithmetic expressions.
 
 </aside>
 
@@ -81,7 +81,7 @@ SELECT
     3 * 6
 ```
 
-Usually a*rithmetic literals* are used for data calculations. Foe example, let’s select *price* of an apartment and a price with 30% discount for *“Apartment”* table:
+Usually arithmetic literals are used for data calculations. Foe example, let’s select *price* of an apartment and a price with 30% discount for *“Apartment”* table:
 
 ```sql
 SELECT
@@ -101,7 +101,7 @@ The table below shows a bit more information about a*rithmetic literals*:
 
 <aside>
 
-📖 **Date and Time Literals** — specific dates or times
+📖 **Date and Time Literals** — specific dates or times.
 
 </aside>
 
@@ -115,7 +115,7 @@ The table below shows a bit more information about a*rithmetic literals*:
 | *Date and Time*     | Date with the ability to set a specific time           | `YYYY-MM-DD hh:mm:ss`, `YYYYMMDDhhmmss`<br>e.g., `1996-03-23 12:30:55` |
 
 
-They often used for data filtering and date time operations. For example, let’s retrieve only those bookings that happened after *“2023-12-29”*  from *“Booking”* table*:*
+They often used for data filtering and date time operations. For example, let’s retrieve only those bookings that happened after *“2023-12-29”*  from *“Booking”* table:
 
 ```sql
 SELECT *
@@ -127,13 +127,13 @@ WHERE checkin_date > "*2023-12-29*"; -- "*2023-12-29*" is date literal
 
 <aside>
 
-📖 **Logical Literals** — `TRUE` or `FALSE` values
+📖 **Logical Literals** — `TRUE` or `FALSE` values.
 
 </aside>
 
-Theses literals represent the truth or falsity of a statement. When a query is being interpreted, SQL converts them to numbers: `TRUE` and `FALSE` become `1` and `0` respectively.
+These literals represent the truth or falsity of a statement. When a query is being interpreted, SQL converts them to numbers: `TRUE` and `FALSE` become `1` and `0` respectively.
 
-For example, we can retrieve apartments that have kitchen:
+For example, we can retrieve apartments that have kitchens:
 
 ```sql
 SELECT *
@@ -145,7 +145,7 @@ WHERE has_internen = TRUE; -- TRUE is logical literal
 
 <aside>
 
-📖 **NULL Literals** — represent “no data”
+📖 **NULL Literals** — represent “no data”.
 
 </aside>
 

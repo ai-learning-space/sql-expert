@@ -4,7 +4,7 @@ We often need not only to query data but also to filter it to retrieve only the 
 
 <aside>
 
-📖 `WHERE` — is an operator in SQL used for data filtering
+📖 `WHERE` — is an operator in SQL used for data filtering.
 
 </aside>
 
@@ -21,14 +21,14 @@ For example, let’s find out flights from *Paris on Boeing 737 plane using “A
 ```sql
 SELECT * 
 FROM flight
-WHERE plane_name = "*Boeing 737*" AND departure_city = "*Paris* ";
+WHERE plane_name = "Boeing 737" AND departure_city = "Paris";
 ```
 
-In the query above we used two comparison operations that were combined by using `AND` . The `WHERE` clause can work with *Numbers*, *Text*, *Dates* and *Boolean* logic, making it very flexible. You can even use it with operators like `>`, `<`, `BETWEEN`, and `LIKE` for more refined filtering. This makes `WHERE` fundamental for complex queries and efficient data handling.
+In the query above we used two comparison operations that were combined by using `AND` . The `WHERE` clause can work with *Numbers*, *Text*, *Dates* and *Boolean* logic, making it very flexible. You can even use it with operators like `>`, `<`, `BETWEEN` and `LIKE` for more refined filtering. This makes `WHERE` fundamental for complex queries and efficient data handling.
 
 # Comparison Operators ⚖️
 
-Comparison operators are used within the `WHERE` clause to compare values in columns against specific criteria, allowing you to filter records based on conditions. These operators are essential for defining exact matches, range checks, or complex filtering. When the expressions are compared, they results in:
+Comparison operators are used within the `WHERE` clause to compare values in columns against specific criteria, allowing you to filter records based on conditions. These operators are essential for defining exact matches, range checks, or complex filtering. When the expressions are compared, they result in:
 
 - `TRUE` → equivalent to 1
 - `FALSE` → equivalent to 0
@@ -46,7 +46,7 @@ Comparison operators are used within the `WHERE` clause to compare values in col
 
 <aside>
 
-💡 Comparison of any values with `NULL` returns `NULL` , except for equivalence operator
+💡 Comparison of any values with `NULL` returns `NULL` , except for equivalence operator.
 
 </aside>
 
@@ -70,7 +70,7 @@ It’s nice if we could combine several conditions together and this is possible
 
 <aside>
 
-💡 *Logical Operators* are essential for connecting comparison operators
+💡 *Logical Operators* are essential for connecting comparison operators.
 
 </aside>
 
@@ -88,5 +88,5 @@ For example, let's select all flights that were made on a “*Airbus A380*” ai
 ```sql
 SELECT *
 FROM Trip
-WHERE plane = '*Airbus A380*' AND NOT town_from = '*Berlin*';
+WHERE plane = 'Airbus A380' AND NOT town_from = 'Berlin';
 ```

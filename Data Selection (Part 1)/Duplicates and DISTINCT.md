@@ -4,7 +4,7 @@ When working with databases, it's common to encounter duplicate values in column
 
 <aside>
 
-📖 **Duplicates** — rows or values that appear more than once in a result set
+📖 **Duplicates** — rows or values that appear more than once in a result set.
 
 </aside>
 
@@ -16,7 +16,7 @@ Duplicates may appear because of the the following reasons:
 
 <aside>
 
-📖 `DISTINCT` — operator that removes duplicates and gets only unique values
+📖 `DISTINCT` — operator that removes duplicates and gets only unique values.
 
 </aside>
 
@@ -27,7 +27,7 @@ SELECT DISTINCT column_names FROM table_name;
 
 <aside>
 
-💡 Behavior of `DISTINCT` is a bit different depending on number of selected columns
+💡 Behavior of `DISTINCT` is a bit different depending on number of selected columns.
 
 </aside>
 

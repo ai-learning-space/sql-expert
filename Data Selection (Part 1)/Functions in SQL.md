@@ -8,7 +8,7 @@ In real-life SQL queries complexity often arises because they are used to handle
 
 </aside>
 
-They help streamline data processing and enhance query efficiency by eliminating the need for additional calculations. SQL provides a wide range of *built-in functions* that help performing operations on data. These functions are categorized into several types, depending on the kind of operations they perform. For example, if we want to lower case a string, we may use `LOWER` function:
+They help streamline data processing and enhance query efficiency by eliminating the need for additional calculations. SQL provides a wide range of *built-in functions* that help perform operations on data. These functions are categorized into several types, depending on the kind of operations they perform. For example, if we want to lower case a string, we may use `LOWER` function:
 
 ```sql
 SELECT LOWER("Hi, This is Lower Case Function");

@@ -1,12 +1,12 @@
 # Result Ordering | ORDER BY ➡️
 
-When executing a `SELECT` query, the rows are returned in an *undefined order* by default. This means that unless you explicitly specify an ordering using the `ORDER BY` clause, the *database* may return the results in any order, which can vary between executions and may not be predictable. 
+When executing a _SELECT_ query, the rows are returned in an *undefined order* by default. This means that unless you explicitly specify an ordering using the `ORDER BY` clause, the *database* may return the results in any order, which can vary between executions and may not be predictable. 
 
 As a result, relying on this default behavior can lead to inconsistent results, especially when working with large datasets or when the underlying data is modified frequently. To ensure that your results are presented in a specific sequence, it's essential to use `ORDER BY`
 
 <aside>
 
-📖 `ORDER BY` — is used for sorting of the final result set based on one or more columns
+📖 `ORDER BY` — is used for sorting of the final result set based on one or more columns.
 
 </aside>
 
@@ -23,7 +23,7 @@ ORDER BY column_1 [ASC | DESC], column_2 [ASC | DESC]
 
 <aside>
 
-💡 One or more columns can be used in `ORDER BY`
+💡 One or more columns can be used in `ORDER BY`.
 
 </aside>
 
@@ -42,7 +42,7 @@ ORDER BY name ASC;
 
 <aside>
 
-💡 `ASC` is used by default and an be omitted, only `DESC` requires explicit definition
+💡 `ASC` is used by default and an be omitted, only `DESC` requires explicit definition.
 
 </aside>
 

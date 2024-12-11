@@ -1,8 +1,8 @@
 # Date and Time 📅
 
-SQL provides robust support for handling *date and time* data through various data types and functions. *Date* and *time* are crucial for tracking records, performing time-based calculations and scheduling events in databases.
+SQL provides robust support for handling *date and time* data through various data types and functions. Date and time are crucial for tracking records, performing time-based calculations and scheduling events in databases.
 
-Dealing with *date* and *time* format might be really tricky sometimes because:
+Dealing with date and time format might be really tricky sometimes because:
 
 - Various formats for representing dates and times
 - The presence of time zones
@@ -56,9 +56,9 @@ Since people around the world want noon to roughly correspond to the sun's highe
 
 The time zone is one of the database server settings and can be set:
 
-- *Globally*
-- *For the current user*
-- *For the current user session*
+- Globally
+- For the current user
+- For the current user session
 
 ```sql
 SET GLOBAL time_zone = '+03:00';    // globally
@@ -86,11 +86,11 @@ SELECT TIMESTAMPDIFF(YEAR, '2003-07-03 14:10:26', NOW());
 
 # How to Choose Right Time Data Type? **🤔**
 
-- *Precision:*
+- ***Precision:***
     - Choose `DATETIME` or `TIMESTAMP` if you need both date and time. If only one is needed, use `DATE` or `TIME`.
-- *Time Zone:*
+- ***Time Zone:***
     - If time zone management is important, consider using `TIMESTAMP` since it often includes time zone information, making it suitable for applications with global users.
-- *Storage Requirements:*
+- ***Storage Requirements:***
     - Different data types may consume different amounts of storage space. Be aware of these differences when designing your database schema.
-- *Compatibility:*
-    - Check your SQL database documentation, as date and time formats can vary between systems (e.g., MySQL, PostgreSQL, SQL Server).
+- ***Compatibility:***
+    - Check your SQL database documentation, as date and time formats can vary between systems (e.g., MySQL, PostgreSQL)

@@ -1,6 +1,6 @@
 # Data Inserting | INSERT ➕
 
-Although querying already existing database is the most often task that we deal with, we do need to create either a table or even an entire database from scratch sometimes. 
+Although querying an already existing database is the most common task that we deal with, we do need to create either a table or even an entire database from scratch sometimes. 
 
 <aside>
 
@@ -21,8 +21,8 @@ VALUES (value1, value2, value3, ...);
 
 Besides, we can insert new values in the following ways:
 
-- *Single/Multiple Row/Rows Inserting*
-- *Inserting Data From Another Table*
+- Single/Multiple Row/Rows Inserting
+- Inserting Data From Another Table
 
 # INSERT Example 🧪
 
@@ -33,15 +33,7 @@ INSERT INTO passenger
 VALUES (1, 'Jane Smith');
 ```
 
-Probably, if we execute the above query an error will occur. The reason for that is *id value*. If the database already exists, we cannot use *id=1* because there is already a record with such *id*.
-
-<aside>
-
-💡 If a column has `AUTO_INCREMENT`, you don’t need to specify a value for it. The database will automatically generate the next value.
-
-</aside>
-
-So we have to then write the following query:
+Probably, if we execute the above query an error will occur. The reason for that is _id_ value. If the database already exists, we cannot use _id=1_ because there is already a record with such id. So we have to then write the following query:
 
 ```sql
 INSERT INTO passenger
@@ -52,9 +44,13 @@ In the above query we inserted a new row but we didn’t specify the columns!
 
 <aside>
 
-💡 It’s always safer to specify inserting column names to avoid mistakes.
+💡 
+If a column has `AUTO_INCREMENT`, you don’t need to specify a value for it. The database will automatically generate the next value.
+
+It’s always safer to specify inserting column names to avoid mistakes.
 
 </aside>
+
 
 Let’s add several rows and use explicit columns definition:
 
@@ -76,6 +72,6 @@ LIMIT 3;
 
 <aside>
 
-💡 If you don’t have data for a column, you can explicitly set it to `NULL`
+💡 If you don’t have data for a column, you can explicitly set it to `NULL`.
 
 </aside>
