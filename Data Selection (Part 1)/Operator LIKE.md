@@ -4,7 +4,7 @@ The data quite often contains text that may have different patterns.
 
 <aside>
 
-📖 `LIKE` operator in SQL is used to search for a specified pattern in a string column
+📖 `LIKE` operator in SQL is used to search for a specified pattern in a string column.
 
 </aside>
 

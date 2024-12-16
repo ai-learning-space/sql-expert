@@ -4,7 +4,7 @@ We may need to restrict a query output to control exactly how many rows we retri
 
 <aside>
 
-📖 `LIMIT` — is used to restrict the number of rows returned by a query
+📖 `LIMIT` — is used to restrict the number of rows returned by a query.
 
 </aside>
 
@@ -27,11 +27,7 @@ ORDER BY departure_time
 LIMIT 5;
 ```
 
-<aside>
-
 💡 `LIMIT` clause is not implemented in all databases. For example, in MSSQL, the `TOP` clause is used to retrieve records from the start of the table, while the `OFFSET FETCH` construct is used for cases where you need to skip records from the beginning.
-
-</aside>
 
 Besides, you can specify range of rows to retrieve:
 

@@ -8,8 +8,8 @@ However, if any issues arise, the `ROLLBACK` command is executed, instructing th
 
 <aside>
 
-- **COMMIT** — is used to apply changes in a transaction
-- **ROLLBACK** — is used to undo changes in a transaction
+- **COMMIT** — is used to apply changes in a transaction.
+- **ROLLBACK** — is used to undo changes in a transaction.
 
 </aside>
 
@@ -49,8 +49,8 @@ Each explicit transaction in MySQL begins with the `START TRANSACTION` statement
 
 A transaction can be concluded in two ways:
 
-- *Using the COMMIT command*, which instructs the server to mark the changes as permanent and release all resources (i.e., row locks) used during the transaction.
-- *Using the ROLLBACK command,* which tells the server to revert the data to its state before the transaction began. After the rollback, any resources used by the transaction are also released.
+- Using the `COMMIT` command, which instructs the server to mark the chsanges as permanent and release all resources (i.e., row locks) used during the transaction.
+- Using the `ROLLBACK` command, which tells the server to revert the data to its state before the transaction began. After the rollback, any resources used by the transaction are also released.
 
 In addition to the `COMMIT` and `ROLLBACK` commands, a transaction may also conclude due to external factors. For instance, if the server shuts down, your transaction will be automatically rolled back when the server restarts.
 

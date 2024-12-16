@@ -86,9 +86,9 @@ GROUP BY plane_name, departure_city;
 
 # Why Using GROUP BY? 🤔
 
-- **Data Summarization:**
+- ***Data Summarization:***
     - Easily summarize and aggregate large datasets to gain insights.
-- **Enhanced Analysis**:
+- ***Enhanced Analysis:***
     - Enables more complex analysis by allowing calculations based on specific groups within your data.
-- **Cleaner Data Presentation**:
+- ***Cleaner Data Presentation:***
     - Helps in presenting data in a more organized and readable format, focusing on key metrics.

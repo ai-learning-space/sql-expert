@@ -4,11 +4,11 @@ After using `GROUP BY` clause to aggregate data, there are often scenarios where
 
 <aside>
 
-📖 `HAVING` is used to filter the grouped data used in `GROUP BY`
+📖 `HAVING` is used to filter the grouped data used in `GROUP BY`.
 
 </aside>
 
-In order to apply those conditions on groups we use well-known functions like `COUNT`, `SUM`, `AVG`, `MIN`, and `MAX` 
+In order to apply those conditions on groups we use well-known functions like `COUNT`, `SUM`, `AVG`, `MIN` and `MAX`.
 
 # HAVING Logic 🧩
 
@@ -46,7 +46,7 @@ let's select the minimum price for each type of accommodation that has a Interne
 
 Here is the detailed explanation of how to get such result:
 
-1. First, retrieve all data from the *apartment table*
+1. First, retrieve all data from the _apartment_ table
 2. Next, filter the records to include only apartments with a TV
 3. Group the data by accommodation type
 4. Filter the resulting groups based on the condition of having at least 5 apartments
@@ -64,7 +64,7 @@ GROUP BY type
 HAVING COUNT(*) >= 5;
 ```
 
-# **Important Notes ⚠️**
+# Important Notes ⚠️
 
 - *Post-Aggregation Filtering:* `HAVING` filters records after the aggregation has been performed. This means you can only use it to impose conditions on aggregate functions like `SUM()`, `COUNT()`, `AVG()`, …
 - Important to know by heart *the order of SQL query execution*

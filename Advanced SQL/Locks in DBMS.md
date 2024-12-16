@@ -14,7 +14,7 @@ During the time your report is being generated, multiple users are altering info
 
 <aside>
 
-📖**Locking** —  is a method of restricting access to data to ensure the correct processing of transactions
+📖**Locking** —  is a method of restricting access to data to ensure the correct processing of transactions.
 
 </aside>
 
@@ -24,11 +24,11 @@ Database servers use locks to manage concurrent access to data, ensuring that wh
 
 There are several different strategies for how to lock a resource. The server can apply locks at one of three different levels, or granularities:
 
-- *Table Locking:*
+- ***Table Locking:***
     - Prevents multiple users from simultaneously modifying data in the same table.
-- *Page Locking:*
+- ***Page Locking:***
     - Prevents multiple users from modifying data on the same page (a page is a memory segment, typically ranging from 2 to 16 KB) of a table at the same time.
-- *Row Locking:*
+- ***Row Locking:***
     - Prevents multiple users from simultaneously modifying the same row in a table.
 
 These approaches have their advantages and disadvantages. Locking the entire table requires less overhead but can lead to long wait times as the number of users increases. Row locking requires more overhead but allows multiple users to modify the same table if they are working with different rows.

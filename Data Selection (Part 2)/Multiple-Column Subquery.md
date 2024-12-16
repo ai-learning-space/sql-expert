@@ -18,7 +18,7 @@ This is useful when you need to compare a combination of columns from one table 
 
 # Example 🧪
 
-Let’s retrieve information about all reservations where the property price at the time of booking `booking.price` matches the current property price `apartment.price` :
+Let’s retrieve information about all reservations where the property price at the time of booking `booking.price` matches the current property price `apartment.price`:
 
 ```sql
 SELECT * 
@@ -28,18 +28,18 @@ WHERE (id, price) IN (SELECT id, price FROM apartment);
 
 # Advantages ⚡
 
-- *Composite Key Matching:*
+- ***Composite Key Matching:***
     - They’re especially useful for composite key comparisons, allowing you to match rows across tables based on multiple conditions.
-- *Dynamic Filtering:*
+- ***Dynamic Filtering:***
     - *Multiple-column subqueries* can dynamically retrieve and compare multi-column values without requiring multiple *single-column subqueries* or complex *joins*.
-- *Enhanced Query Power:*
+- ***Enhanced Query Power:***
     - They expand the querying capability beyond what *single-column subqueries* offer, making it possible to handle more intricate data relationships.
 
 # Important Notes ⚠️
 
-- *Performance Overheads:*
+- ***Performance Overheads:***
     - As with any complex subquery, *multiple-column subqueries* may impact performance, especially when used with large data sets.
-- *Readability:*
+- ***Readability:***
     - Using multiple fields in subqueries can make queries harder to read and maintain. Adding comments or breaking down complex conditions can help with clarity.
-- *Supported Comparisons:*
+- ***Supported Comparisons:***
     - Some database systems have limited support for *multiple-column comparisons,* so syntax and behavior might differ slightly depending on the system.

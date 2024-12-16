@@ -29,7 +29,7 @@ The table below describes most common aggregation functions used in SQL:
 
 <aside>
 
-💡 Aggregation functions exclude `NULL` values except for `COUNT(*)`
+💡 Aggregation functions exclude `NULL` values except for `COUNT(*)`.
 
 </aside>
 
@@ -65,9 +65,9 @@ GROUP BY
 
 # Importance of Aggregation Functions 📌
 
-- **Data Summary**:
+- ***Data Summary***:
     - They provide a way to summarize large datasets, allowing for easier interpretation and reporting.
-- **Trend Analysis**:
+- ***Trend Analysis***:
     - By applying aggregation functions, users can identify trends over time, such as average sales per month or total customer counts.
-- **Decision Making**:
+- ***Decision Making***:
     - Aggregated data supports business intelligence and decision-making processes by providing essential insights.

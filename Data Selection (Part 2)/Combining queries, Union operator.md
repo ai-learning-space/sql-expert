@@ -13,13 +13,13 @@ It allows you to retrieve data from multiple tables or queries and merge them to
 # UNION Logic 🧩
 
 - The `UNION` operator combines the results of two or more `SELECT` queries.
-- Each `SELECT` statement must have the same number of columns in the result sets, and the columns must have compatible data types
+- Each `SELECT` statement must have the same number of columns in the result sets, and the columns must have compatible data types.
 
 <aside>
 
 💡
   - `UNION` removes duplicate rows from the final result.
-  - If you want to include duplicates, you can use `UNION ALL`
+  - If you want to include duplicates, you can use `UNION ALL`.
 
 </aside>
 
@@ -46,7 +46,7 @@ There are two other operators that behave similarly to `UNION`:
 - `INTERSECT`:
     - Combines two `SELECT` queries but returns only the rows from the first `SELECT` that have matches in the second `SELECT`.
 - `EXCEPT`:
-    - Combines two `SELECT` queries but returns only the rows from the first `SELECT` that don’t  have matches in the second `SELECT`
+    - Combines two `SELECT` queries but returns only the rows from the first `SELECT` that don’t  have matches in the second `SELECT`.
 
 # Example 🧪
 
@@ -60,18 +60,18 @@ SELECT DISTINCT FamilyMembers.member_name AS name FROM FamilyMembers;
 
 # When to Use UNION? 🤔
 
-- *Aggregating Results:*
+- ***Aggregating Results:***
     - When you need to aggregate data from different tables or sources where the structure is similar.
-- *Reporting:*
+- ***Reporting:***
     - Useful in generating consolidated reports from multiple data sets.
-- *Data Migration:*
+- ***Data Migration:***
     - When merging data from different periods or versions of a database.
 
 # Important Notes ⚠️
 
-- **Performance**:
+- ***Performance***:
     - Since `UNION` removes duplicates, it may take longer to execute compared to `UNION ALL`. If you know that duplicates are not an issue, prefer using `UNION ALL` for better performance.
-- **Data Types**:
+- ***Data Types***:
     - Ensure that the data types of the columns being combined are compatible. For example, you cannot union a string column with an integer column.
-- **Column Names**:
+- ***Column Names***:
     - The resulting column names in the final output will be taken from the first `SELECT` statement in the union.

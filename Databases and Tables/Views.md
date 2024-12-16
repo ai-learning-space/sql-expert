@@ -10,11 +10,11 @@ Well-designed applications often provide a public interface that hides implement
 
 </aside>
 
-*Views* are sometimes referred to as *"virtual tables"* because they appear to users as tables
+*Views* are sometimes referred to as *"virtual tables"* because they appear to users as tables.
 
 <aside>
 
-💡 Views don’t store data themselves. They retrieve data from other tables when are used
+💡 Views don’t store data themselves. They retrieve data from other tables when are used.
 
 </aside>
 
@@ -22,7 +22,7 @@ If the data in the underlying table changes, the user receives updated informati
 
 <aside>
 
-💡 Views don’t cache the results of queries
+💡 Views don’t cache the results of queries.
 
 </aside>
 
@@ -73,9 +73,9 @@ email      varchar(38)   YES             <NULL>
 
 # Why Use Views?🤔
 
-- *Simplifying Complex Queries:*
+- ***Simplifying Complex Queries:***
     - *Views* are used to simplify complex queries and create an abstraction layer between the user and the database. They can hide the complexity of the data structure and provide a streamlined interface for data access.
-- *Improving Performance:*
+- ***Improving Performance:***
     - Creating *views* that encapsulate complex queries can help optimize the execution of those queries, leading to faster query execution and improved overall database performance.
-- *Enhancing Security:*
+- ***Enhancing Security:***
     - *Views* can be employed to secure sensitive data. By creating views that restrict access to specific columns or rows, administrators can limit exposure to confidential information, ensuring that only authorized users have access to sensitive data.

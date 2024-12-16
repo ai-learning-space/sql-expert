@@ -4,15 +4,15 @@ Relational databases *(RDB)* are one of the most common ways of storing and orga
 
 <aside>
 
-📖 **Relational Databases** — based on the relational model, where data is organized into tables containing rows and columns
+📖 **Relational Databases** — based on the relational model, where data is organized into tables containing rows and columns.
 
 </aside>
 
-Each row in a table is always unique (i.e. there is no sense storing duplicate data). For this purpose, each table must always have a special column to identify each record called *Primary Key 🔑* 
+Each row in a table is always unique (i.e. there is no sense storing duplicate data). For this purpose, each table must always have a special column to identify each record called *Primary Key* 🔑
 
 <aside>
 
-📖 **Primary Key** — unique identifier for each record in a table
+📖 **Primary Key** — unique identifier for each record in a table.
 
 </aside>
 
@@ -20,7 +20,7 @@ Relationships between tables are created using *Foreign Keys*, which allow you t
 
 <aside>
 
-📖 **Foreign Key** — column or set of columns in one table that references the **Primary Key** in another table
+📖 **Foreign Key** — column or set of columns in one table that references the **Primary Key** in another table.
 
 </aside>
 
@@ -55,22 +55,22 @@ Besides it has the following *Primary Keys:*
 
 # Advantages ⚡
 
-- *Structured Data and ACID Compliance*:
+- ***Structured Data and ACID Compliance:***
     - Enforce a structured schema, ensuring data is organized in tables with defined relationships. They follow *ACID (Atomicity, Consistency, Isolation, Durability)* principles, which guarantee reliable transactions and data integrity.
     - This makes them ideal for applications where data consistency and accuracy are critical, such as *financial systems* or *inventory management*.
-- *Powerful Querying with SQL:*
+- ***Powerful Querying with SQL:***
     - Use *Structured Query Language (SQL)* for querying and manipulating data, offering a powerful and flexible way to perform complex queries, joins, and aggregations.
-    - Users can easily retrieve and analyze data from multiple tables, enabling advanced reporting and data analytics
+    - Users can easily retrieve and analyze data from multiple tables, enabling advanced reporting and data analytics.
 
 # Disadvantages 📉
 
-- *Scalability Challenges:*
+- ***Scalability Challenges:***
     - May face challenges when scaling horizontally (adding more servers), as they are typically designed to run on a single server or require complex sharding to distribute data across multiple servers.
     - It limits their performance and flexibility for applications that need to handle large volumes of data or high traffic loads.
-- *Fixed Schema:*
+- ***Fixed Schema:***
     - The predefined *schema* of relational databases can make it difficult to adapt to changing requirements. Altering the *schema*, such as adding new fields or changing relationships, can be complex and time-consuming.
     - This hinders development agility, especially in fast-paced environments where requirements may evolve frequently.
-- *Complexity of Relationships:*
+- ***Complexity of Relationships:***
     - While relational databases manage relationships well, they can become complicated in scenarios involving many-to-many relationships, requiring additional tables (junction tables) and more complex queries.
     - This complexity can lead to performance issues and make it harder to write and maintain queries, particularly for less experienced users.
 

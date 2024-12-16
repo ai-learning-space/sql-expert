@@ -4,7 +4,7 @@
 
 <aside>
 
-💡 **Primary** and **Foreign Keys** allow data to be easily combined and manipulated
+💡 **Primary** and **Foreign Keys** allow data to be easily combined and manipulated.
 
 </aside>
 
@@ -17,7 +17,7 @@ In relational databases, information is stored in related tables. Each table con
 
 ![table-structure](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/table-structure.png)
 
-Each column in a table must have predefined data type. The main reason → *Data Integrity and Consistency*. It ensures that only valid and consistent data is stored in that column. Below you can see what data types can be defined:
+Each column in a table must have a predefined data type. The main reason → *Data Integrity and Consistency*. It ensures that only valid and consistent data is stored in that column. Below you can see what data types can be defined:
 
 - `INTEGER` → numeric data type 🔢
 - `VARCHAR` → string data type ✏️
@@ -27,7 +27,7 @@ A column defined as `INTEGER` will only accept numeric values, preventing errors
 
 <aside>
 
-💡 Each **Column** must have fixed data type (e.g. *integer*, *varchar*, …)
+💡 Each **Column** must have a fixed data type (e.g. *integer*, *varchar*, …)
 
 </aside>
 
@@ -35,7 +35,7 @@ A column defined as `INTEGER` will only accept numeric values, preventing errors
 
 <aside>
 
-📖 **Primary Key** — **unique** identifier for each record in a table. It ensures data integrity by ensuring that each row can be uniquely identified, preventing duplication and confusion
+📖 **Primary Key** — **unique** identifier for each record in a table. It ensures data integrity by ensuring that each row can be uniquely identified, preventing duplication and confusion.
 
 </aside>
 
@@ -59,11 +59,11 @@ Since *Primary Key* is an important concept in SQL, let’s have a look at its m
 
 When defining a *primary key*, you might choose columns like:
 
-- *UserID:*
+- ***UserID*:**
     - A unique identifier for users in a user table (e.g., auto-incrementing integer).
-- *Email:*
+- ***Email:***
     - A unique email address in a contacts table, assuming no two users can have the same email.
-- *OrderID***:**
+- ***OrderID:***
     - A unique identifier for each order in an orders table, ensuring that each order can be traced back without ambiguity.
 
 Including these additional points will provide a more comprehensive understanding of primary keys and their significance in relational databases.
@@ -72,11 +72,11 @@ Including these additional points will provide a more comprehensive understandin
 
 <aside>
 
-📖 **Foreign Key** — reference to the *primary key* of another table, ensuring data integrity and establishing logical relationships between different entities
+📖 **Foreign Key** — reference to the *primary key* of another table, ensuring data integrity and establishing logical relationships between different entities.
 
 </aside>
 
-The main purpose of a *foreign key* is to maintain *links* between tables, which avoids duplication of data and makes it easier to manage. For example, “*Ownership”* table might contain a f*oreign key* that references the *primary key of the “Cars”* table*,* making it easy to retrieve information about the customer who placed the order:
+The main purpose of a *foreign key* is to maintain *links* between tables, which avoids duplication of data and makes it easier to manage. For example, “*Ownership”* table might contain a *foreign key* that references the *primary key* of the *“Cars”* table making it easy to retrieve information about the customer who placed the order:
 
 ![table-relations](https://raw.githubusercontent.com/WebOfRussia/sql-course/refs/heads/main/SQL%20Fundamentals/img/table-relations.png)
 
@@ -88,7 +88,7 @@ The main purpose of a *foreign key* is to maintain *links* between tables, which
 
 </aside>
 
-Thus, when records are created in the *child table*, the *foreign key* value must exist in the *parent table*
+Thus, when records are created in the *child table*, the *foreign key* value must exist in the *parent table*.
 
 # Foreign Key Properties 🎨
 

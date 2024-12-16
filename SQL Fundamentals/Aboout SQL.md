@@ -30,4 +30,4 @@ Some examples:
 
 If you are starting to learn SQL, it is recommended to master standard SQL. However, if you already know which specific database you will be working with, it is better to learn its dialect, since different databases may have some differences in syntax.
 
-In our course, we will use the PostgreSQL since it is popular and uses a syntax close to standard SQL, with minor deviations.
+In our course, we will use PostgreSQL since it is popular and uses a syntax close to standard SQL, with minor deviations.

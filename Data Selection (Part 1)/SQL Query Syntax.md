@@ -13,20 +13,21 @@ SELECT column1, column2, ...
 FROM table_name;
 ```
 
-<aside>
-
-💡
-- `SELECT` ****—**** keyword is used to specify the columns you want to retrieve
-- `FROM` — keyword indicates the table from which to retrieve the data
-
-</aside>
-
 Let’s select several columns from *“Booking”* table:
 
 ```sql
 SELECT name, email, phone_number	
 FROM booking;
 ```
+
+<aside>
+
+💡
+- `SELECT` — keyword is used to specify the columns you want to retrieve
+- `FROM` — keyword indicates the table from which to retrieve the data
+
+</aside>
+
 
 ### All Columns Selection
 
@@ -49,15 +50,9 @@ Besides, you can retrieve custom/arbitrary strings, numbers, dates, …
 SELECT "Hi, I’m learning SQL", 999;
 ```
 
-<aside>
-
-💡 `SELECT` can retrieve not only data rom database tables but also to display arbitrary strings, numbers, dates, and more. 
-
-</aside>
-
 # Aliases 🏷️
 
-Oftentimes we would like to rename columns that we get from the queries. For example, product manager in our team would like to see a nice report that is understandable and nice to read but in the database we have columns that don’t convey the meaning and it’s hard to understand for non-technical people. 
+Oftentimes we would like to rename columns that we get from the queries. For example, a product manager in our team would like to see a nice report that is understandable and nice to read but in the database we have columns that don’t convey the meaning and it’s hard to understand for non-technical people. 
 
 In this case we may use *aliases*. *Aliases* in SQL are temporary names that you can assign to database tables or columns within a query. They are particularly useful for enhancing the readability of your SQL statements, simplifying complex queries and providing more meaningful labels for the results in your output. Aliases are defined by using `AS` keyword:
 

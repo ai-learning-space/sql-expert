@@ -4,7 +4,7 @@ Key-value databases are one of the simplest and most efficient types of *NoSQL* 
 
 <aside>
 
-📖 **Key-Value Database** — data storage where each record is represented as a key-value pair
+📖 **Key-Value Database** — data storage where each record is represented as a key-value pair.
 
 </aside>
 
@@ -26,7 +26,7 @@ We always have keys that may have flexible structure (e.g. *“name:id:attribute
 
 <aside>
 
-📖 **Key-Value Database** no longer have strict format. Each entity may have its own structure
+📖 **Key-Value Database** no longer has strict format. Each entity may have its own structure.
 
 </aside>
 
@@ -42,25 +42,25 @@ Key: author:1
 Value: {"name": "George Orwell", "birth_year": 1903}
 ```
 
-In this example, the book’s value includes a reference to the *author’s ID →* `author_id` , allowing you to link the book to its author, even without strict *foreign key* relationships.
+In this example, the book’s value includes a reference to the *author’s ID* → `author_id` , allowing you to link the book to its author, even without strict *foreign key* relationships.
 
 <aside>
 
-💡 You can retrieve the author’s details using the key `author:1` 
+💡 You can retrieve the author’s details using the key `author:1`.
 
 </aside>
 
 # Advantages ⚡
 
-- *High Speed* → fast access to data due to the simple key-value structure.
-- *Simple Storage Model* → data is stored in a minimalistic form of pairs.
-- *Flexibility* → values can be any data type, including complex formats such as *JSON*.
+- ***High Speed*** → fast access to data due to the simple key-value structure.
+- ***Simple Storage Model*** → data is stored in a minimalistic form of pairs.
+- ***Flexibility*** → values can be any data type, including complex formats such as *JSON*.
 
 # Disadvantages 📉
 
-- *Data Model Complexity* → poor scalability as the complexity of data models increases.
-- *Multiple Records* → it is difficult to perform operations on several records at once.
-- *No Query Language* → the logic that is usually implemented in the database must be transferred to the application code, which complicates its development and maintenance
+- ***Data Model Complexity*** → poor scalability as the complexity of data models increases.
+- ***Multiple Records*** → it is difficult to perform operations on several records at once.
+- ***No Query Language*** → the logic that is usually implemented in the database must be transferred to the application code, which complicates its development and maintenance.
 
 # Popular Key-Value Databases ❤️
 

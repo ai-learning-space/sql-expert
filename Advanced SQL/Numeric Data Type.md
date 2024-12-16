@@ -2,7 +2,7 @@
 
 <aside>
 
-📖**Numeric Data Type** — numerical values (integers or decimals)
+📖**Numeric Data Type** — numerical values (integers or decimals).
 
 </aside>
 
@@ -27,13 +27,13 @@ Here’s a table summarizing the *Numeric Data Types* in SQL:
 
 When selecting a numeric data type, consider the following factors:
 
-- *Range of Values:*
+- ***Range of Values:***
     - Choose a type that can accommodate the maximum and minimum values you expect to store. For instance, if you need to store age, a `TINYINT` may suffice, but for larger values like population counts, `BIGINT` would be more appropriate.
-- *Precision:*
+- ***Precision:***
     - For financial applications where accuracy is critical (e.g., currency calculations), use `DECIMAL` or `NUMERIC`. These types prevent rounding errors inherent in floating-point arithmetic.
-- *Storage Efficiency:*
+- ***Storage Efficiency:***
     - Smaller numeric types (like `TINYINT` or `SMALLINT`) save space in your database. If storage is a concern, choose the smallest data type that meets your needs.
-- *Performance:*
+- ***Performance:***
     - While the performance difference between numeric types is often negligible, smaller types may lead to better performance in large datasets due to reduced I/O and improved cache efficiency.
 
 # Mathematical Functions in SQL 🧮

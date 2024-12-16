@@ -6,7 +6,7 @@ However, such an ideal situation is unrealistic, which is why we need to conside
 
 <aside>
 
-📖**Transaction** — is a sequence of operations on a database that are executed as a single unit
+📖**Transaction** — is a sequence of operations on a database that are executed as a single unit.
 
 </aside>
 
