@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://github.com/ai-learning-space/sql-expert/blob/content_extention/common/img/readme-logo.png" width="400" height="450">
-  <figcaption>readme-logo.png</figcaption>
 </p>
 
 **Welcome to the _SQL Expert Course!_** 🎉
