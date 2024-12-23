@@ -1,5 +1,6 @@
 # SQL Expert Course
-![readme-logo.jpg](https://raw.githubusercontent.com/ai-learning-space/sql-expert/content_extention/common/img/readme-logo.jpg)
+
+<img src="https://raw.githubusercontent.com/ai-learning-space/sql-expert/content_extention/common/img/readme-logo.jpg" alt="readme-logo" width="800" height="800" />
 
 
 **Welcome to the _SQL Expert Course!_** 🎉
