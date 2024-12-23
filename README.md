@@ -1,6 +1,8 @@
-### SQL Expert Course
+# SQL Expert Course
+![readme-logo.jpg](https://raw.githubusercontent.com/ai-learning-space/sql-expert/content_extention/common/img/readme-logo.jpg)
 
-Welcome to the _SQL Expert Course!_ 🎉
+
+**Welcome to the _SQL Expert Course!_** 🎉
 
 This repository is your ultimate guide to becoming proficient in SQL, whether you're just starting out or looking to level up your skills. Here’s what you can expect:
 
