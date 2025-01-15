@@ -50,7 +50,7 @@ For example, letâ€™s find out how many unique flights has each air company in â€
 ```sql
 SELECT plane_name, COUNT(DISTINCT plane)
 FROM flight
-GROUP BY plane_name;
+GROUP BY air_company;
 ```
 
 Above query can be visualized in the picture below:
